@@ -65,7 +65,7 @@ export const siteConfig: SiteConfig = {
   address: '河南省郑州市高新技术产业开发区',
   phone: '13051901573',
   email: '784933282@qq.com',
-  wechat: 'humanbeings_-',
+  wechat: 'humanbeings_-,
   qq: '784933282',
   workingHours: '周一至周六 8:00-18:00'
 };
