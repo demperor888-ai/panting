@@ -65,7 +65,7 @@ export const siteConfig: SiteConfig = {
   address: '河南省郑州市高新技术产业开发区',
   phone: '400-XXX-XXXX',
   email: 'contact@panting.com',
-  wechat: 'panting_material',
+  wechat: 'pantingsuke_material',
   qq: '123456789',
   workingHours: '周一至周六 8:00-18:00'
 };
