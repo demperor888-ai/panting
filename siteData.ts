@@ -63,10 +63,10 @@ export const siteConfig: SiteConfig = {
   shortName: '磐霆速科',
   description: '专注新型建筑材料研发与生产',
   address: '河南省郑州市高新技术产业开发区',
-  phone: '400-XXX-XXXX',
-  email: 'contact@panting.com',
-  wechat: 'pantingsuke_material',
-  qq: '123456789',
+  phone: '13051901573',
+  email: '784933282@qq.com',
+  wechat: 'humanbeings_-',
+  qq: '784933282',
   workingHours: '周一至周六 8:00-18:00'
 };
 
