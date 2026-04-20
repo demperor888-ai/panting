@@ -10,8 +10,12 @@ interface ProductCardProps {
 export default function ProductCard({ product }: ProductCardProps) {
   return (
     <Link href={`/products/${product.id}`} className="card group block overflow-hidden">
-      <div className="h-48 bg-gradient-to-br from-primary-400 to-primary-600 flex items-center justify-center">
-        <span className="text-6xl opacity-50">📦</span>
+      <div className="h-48 bg-gray-100 flex items-center justify-center overflow-hidden">
+        <img
+          src={product.image}
+          alt={product.name}
+          className="w-full h-full object-cover"
+        />
       </div>
       <div className="p-5">
         <h3 className="text-lg font-semibold text-gray-800 group-hover:text-primary-600 transition">

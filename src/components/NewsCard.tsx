@@ -12,8 +12,12 @@ export default function NewsCard({ news, compact }: NewsCardProps) {
   if (compact) {
     return (
       <Link href={`/news/${news.id}`} className="flex items-start space-x-3 p-3 hover:bg-gray-50 rounded-lg transition">
-        <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
-          <span className="text-2xl">📰</span>
+        <div className="w-16 h-16 bg-gray-100 rounded-lg flex items-center justify-center flex-shrink-0 overflow-hidden">
+          <img
+            src={news.image}
+            alt={news.title}
+            className="w-full h-full object-cover"
+          />
         </div>
         <div className="flex-1 min-w-0">
           <h4 className="text-sm font-medium text-gray-800 line-clamp-2">{news.title}</h4>
@@ -25,8 +29,12 @@ export default function NewsCard({ news, compact }: NewsCardProps) {
 
   return (
     <Link href={`/news/${news.id}`} className="card group block overflow-hidden">
-      <div className="h-40 bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
-        <span className="text-4xl opacity-50">📰</span>
+      <div className="h-40 bg-gray-100 flex items-center justify-center overflow-hidden">
+        <img
+          src={news.image}
+          alt={news.title}
+          className="w-full h-full object-cover"
+        />
       </div>
       <div className="p-5">
         <span className={`text-xs px-2 py-1 rounded ${

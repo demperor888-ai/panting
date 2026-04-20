@@ -10,8 +10,12 @@ interface CaseCardProps {
 export default function CaseCard({ caseItem }: CaseCardProps) {
   return (
     <Link href={`/cases/${caseItem.id}`} className="card group block overflow-hidden">
-      <div className="h-48 bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
-        <span className="text-5xl opacity-50">🏗️</span>
+      <div className="h-48 bg-gray-100 flex items-center justify-center overflow-hidden">
+        <img
+          src={caseItem.image}
+          alt={caseItem.title}
+          className="w-full h-full object-cover"
+        />
       </div>
       <div className="p-5">
         <h3 className="text-lg font-semibold text-gray-800 group-hover:text-primary-600 transition line-clamp-2">

@@ -34,8 +34,12 @@ export default function CaseDetailPage({ params }: { params: { id: string } }) {
       <div className="max-w-4xl mx-auto px-4 py-12">
         <div className="bg-white rounded-xl shadow-lg overflow-hidden">
           {/* 案例图片 */}
-          <div className="h-80 bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
-            <span className="text-8xl opacity-50">🏗️</span>
+          <div className="h-80 bg-gray-100 flex items-center justify-center overflow-hidden">
+            <img
+              src={caseItem.image}
+              alt={caseItem.title}
+              className="w-full h-full object-cover"
+            />
           </div>
 
           {/* 案例信息 */}

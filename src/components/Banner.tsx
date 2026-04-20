@@ -24,8 +24,13 @@ export default function Banner({ banners }: BannerProps) {
 
   return (
     <div className="relative h-[500px] overflow-hidden">
-      {/* 背景渐变 */}
-      <div className="absolute inset-0 bg-gradient-to-r from-primary-700 to-primary-900" />
+      {/* 背景图片 */}
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: `url(${banners[currentIndex].image})` }}
+      >
+        <div className="absolute inset-0 bg-black/40" />
+      </div>
 
       {/* 装饰元素 */}
       <div className="absolute inset-0 opacity-10">

@@ -40,8 +40,12 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
         <div className="bg-white rounded-xl shadow-lg overflow-hidden">
           <div className="grid md:grid-cols-2 gap-8 p-8">
             {/* 产品图片 */}
-            <div className="h-80 bg-gradient-to-br from-primary-400 to-primary-600 rounded-xl flex items-center justify-center">
-              <span className="text-8xl opacity-50">📦</span>
+            <div className="h-80 bg-gray-100 rounded-xl flex items-center justify-center overflow-hidden">
+              <img
+                src={product.image}
+                alt={product.name}
+                className="w-full h-full object-cover"
+              />
             </div>
 
             {/* 产品信息 */}
@@ -77,8 +81,12 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
             <div className="grid md:grid-cols-3 gap-6">
               {relatedProducts.map((p) => (
                 <Link key={p.id} href={`/products/${p.id}`} className="card block overflow-hidden">
-                  <div className="h-40 bg-gradient-to-br from-primary-400 to-primary-600 flex items-center justify-center">
-                    <span className="text-4xl opacity-50">📦</span>
+                  <div className="h-40 bg-gray-100 flex items-center justify-center overflow-hidden">
+                    <img
+                      src={p.image}
+                      alt={p.name}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <div className="p-4">
                     <h3 className="font-semibold text-gray-800">{p.name}</h3>
