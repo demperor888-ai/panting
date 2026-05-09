@@ -141,7 +141,7 @@ export default function HomePage() {
       </section>
 
       {/* 联系我们 */}
-      <section className="relative py-24 bg-cover bg-center text-white" style={{ backgroundImage: `url('/images/banners/xywmbz.jpg')` }}>
+      <section className="relative py-24 bg-cover bg-center text-white" style={{ backgroundImage: `url('/images/banners/xybz.jpg')` }}>
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="relative max-w-7xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">需要我们的帮助？</h2>
