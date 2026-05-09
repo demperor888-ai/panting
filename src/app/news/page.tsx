@@ -16,10 +16,11 @@ export default function NewsPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* 顶部Banner */}
-      <div className="bg-primary-600 text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 text-center">
+      <div className="relative text-white py-24 bg-cover bg-center" style={{ backgroundImage: `url('/images/banners/bg-1.jpg')` }}>
+        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="relative max-w-7xl mx-auto px-4 text-center">
           <h1 className="text-4xl font-bold">新闻资讯</h1>
-          <p className="mt-2 text-primary-200">了解行业动态，掌握最新资讯</p>
+          <p className="mt-2 text-gray-200">了解行业动态，掌握最新资讯</p>
         </div>
       </div>
 

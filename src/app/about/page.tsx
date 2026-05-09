@@ -4,10 +4,11 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* 顶部Banner */}
-      <div className="bg-primary-600 text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 text-center">
+      <div className="relative text-white py-24 bg-cover bg-center" style={{ backgroundImage: `url('/images/banners/bg-1.jpg')` }}>
+        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="relative max-w-7xl mx-auto px-4 text-center">
           <h1 className="text-4xl font-bold">关于我们</h1>
-          <p className="mt-2 text-primary-200">About Us</p>
+          <p className="mt-2 text-gray-200">About Us</p>
         </div>
       </div>
 
