@@ -67,7 +67,9 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-5 gap-4">
             {productCategories.map((cat) => (
               <div key={cat.id} className="text-center p-4 border rounded-xl hover:border-primary-600 transition">
-                <div className="text-3xl mb-2">📦</div>
+                <div className="w-full h-24 mb-2 rounded-lg overflow-hidden">
+                  <img src="/images/products/products-2.jpg" alt={cat.name} className="w-full h-full object-cover" />
+                </div>
                 <p className="font-medium text-gray-800">{cat.name}</p>
               </div>
             ))}
