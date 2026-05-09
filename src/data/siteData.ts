@@ -76,7 +76,7 @@ export const initialProducts: Product[] = [
     name: '高强度无收缩灌浆料',
     category: 'guanjiang',
     description: '适用于设备基础二次灌浆、地脚螺栓锚固、钢结构柱脚底板灌浆等，具有高强度、无收缩、自流平特点。',
-    image: '/images/products/guanjiang-1.jpg',
+    image: '/images/products/products-1.jpg',
     features: ['早强高强', '自流平性', '无收缩', '耐久性好']
   },
   {
@@ -84,7 +84,7 @@ export const initialProducts: Product[] = [
     name: 'CGM高强灌浆料',
     category: 'guanjiang',
     description: '广泛应用于重型机械、精密设备安装灌浆，桥梁支座灌浆等工程领域。',
-    image: '/images/products/guanjiang-1.jpg',
+    image: '/images/products/products-1.jpg',
     features: ['流动度大', '强度高', '微膨胀', '抗疲劳']
   },
   {
@@ -92,7 +92,7 @@ export const initialProducts: Product[] = [
     name: '砌筑砂浆',
     category: 'shajiang',
     description: '用于砌筑各种墙体材料，具有良好的和易性和粘结强度。',
-    image: '/images/products/guanjiang-1.jpg',
+    image: '/images/products/products-1.jpg',
     features: ['保水性好', '粘结力强', '施工方便']
   },
   {
@@ -100,7 +100,7 @@ export const initialProducts: Product[] = [
     name: '抹灰砂浆',
     category: 'shajiang',
     description: '室内外墙面抹灰，表面平整光滑，不开裂、不空鼓。',
-    image: '/images/products/guanjiang-1.jpg',
+    image: '/images/products/products-1.jpg',
     features: ['不开裂', '不空鼓', '表面细腻']
   },
   {
@@ -108,7 +108,7 @@ export const initialProducts: Product[] = [
     name: '结构加固胶',
     category: 'tezhong',
     description: '用于建筑结构加固、植筋、粘钢等工程，强度高、耐老化。',
-    image: '/images/products/guanjiang-1.jpg',
+    image: '/images/products/products-1.jpg',
     features: ['高粘结力', '耐老化', '抗震动']
   },
   {
@@ -116,7 +116,7 @@ export const initialProducts: Product[] = [
     name: '聚合物防水砂浆',
     category: 'fangshui',
     description: '用于地下室、卫生间、水池等防水工程，抗渗性能优异。',
-    image: '/images/products/guanjiang-1.jpg',
+    image: '/images/products/products-1.jpg',
     features: ['抗渗性强', '粘结牢固', '耐腐蚀']
   },
   {
@@ -124,7 +124,7 @@ export const initialProducts: Product[] = [
     name: '装配式专用砂浆',
     category: 'zhuangpeishi',
     description: '专为装配式建筑开发，用于预制构件接缝、灌浆连接。',
-    image: '/images/products/guanjiang-1.jpg',
+    image: '/images/products/products-1.jpg',
     features: ['流动性好', '强度发展快', '连接可靠']
   },
 ];
