@@ -33,8 +33,8 @@ export default function AboutPage() {
                 深受广大客户信赖。
               </p>
             </div>
-            <div className="h-64 bg-gradient-to-br from-primary-400 to-primary-600 rounded-xl flex items-center justify-center">
-              <span className="text-6xl opacity-50">🏢</span>
+            <div className="h-64 rounded-xl overflow-hidden">
+              <img src="/images/cases/gywm.jpg" alt="公司简介" className="w-full h-full object-cover" />
             </div>
           </div>
         </section>
