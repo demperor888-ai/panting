@@ -179,7 +179,7 @@ export const initialCases: Case[] = [
     client: '某钢铁集团',
     location: '河南省郑州市',
     description: '为年产500万吨钢铁厂提供设备基础灌浆服务，使用我公司高强度灌浆料，工程质量优良，获得客户高度评价。项目历时3个月，灌浆面积超过5000平方米。',
-    image: '/images/products/guanjiang-1.jpg',
+    image: '/images/cases/dxgtc.jpg',
     products: ['高强度无收缩灌浆料', 'CGM高强灌浆料'],
     date: '2023-12-01'
   },
