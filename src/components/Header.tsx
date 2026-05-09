@@ -30,7 +30,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3">
             <div className="w-10 h-10 bg-primary-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">磐</span>
+              <span className="text-white font-bold text-sm">PTSK</span>
             </div>
             <div>
               <h1 className="text-lg font-bold text-gray-800">{siteConfig.shortName}</h1>
