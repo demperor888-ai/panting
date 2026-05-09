@@ -189,7 +189,7 @@ export const initialCases: Case[] = [
     client: '某交通建设集团',
     location: '河南省洛阳市',
     description: '参与高速公路桥梁建设，提供桥梁支座灌浆材料和技术支持，确保工程质量。项目全长15公里，共20座桥梁，使用灌浆料100余吨。',
-    image: '/images/products/guanjiang-1.jpg',
+    image: '/images/cases/gsgl.jpg',
     products: ['CGM高强灌浆料'],
     date: '2023-11-15'
   },
@@ -199,7 +199,7 @@ export const initialCases: Case[] = [
     client: '某房地产集团',
     location: '河南省郑州市',
     description: '为大型商业综合体提供地下室防水解决方案，使用聚合物防水砂浆，效果显著。地下室面积达2万平方米，防水效果良好，无渗漏问题。',
-    image: '/images/products/guanjiang-1.jpg',
+    image: '/images/cases/fsgc.jpg',
     products: ['聚合物防水砂浆'],
     date: '2023-10-20'
   },
