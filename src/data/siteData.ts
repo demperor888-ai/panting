@@ -146,7 +146,7 @@ export const initialNews: News[] = [
     category: '公司动态',
     summary: '公司自主研发的新型高强度灌浆料通过省级鉴定，性能达到国内领先水平。',
     content: '公司自主研发的新型高强度灌浆料通过省级鉴定，性能达到国内领先水平。该产品具有早强、高强、自流平、无收缩等特点，广泛应用于设备安装、桥梁工程等领域。产品经过多项性能测试，各项指标均达到或超过国家标准，填补了省内空白。',
-    image: '/images/products/guanjiang-1.jpg',
+    image: '/images/news/xxgjcl.jpg',
     date: '2024-01-10',
     views: 189
   },
