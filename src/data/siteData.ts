@@ -156,7 +156,7 @@ export const initialNews: News[] = [
     category: '行业资讯',
     summary: '装配式建筑作为建筑工业化的重要形式，近年来发展迅速，市场规模持续扩大。',
     content: '装配式建筑作为建筑工业化的重要形式，近年来发展迅速，市场规模持续扩大。国家政策大力支持，未来发展前景广阔。我公司将抓住机遇，大力发展装配式建筑配套材料，为行业发展贡献力量。',
-    image: '/images/products/guanjiang-1.jpg',
+    image: '/images/news/zbsjzfz.jpg',
     date: '2024-01-05',
     views: 312
   },
