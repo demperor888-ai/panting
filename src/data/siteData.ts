@@ -210,7 +210,7 @@ export const initialBanners: Banner[] = [
     id: 'b1',
     title: '专注新型建筑材料',
     subtitle: '为您提供专业的建筑材料解决方案',
-    image: '/images/products/guanjiang-1.jpg',
+    image: '/images/banners/banners-1.jpg',
     link: '/products',
     order: 1
   },
@@ -218,7 +218,7 @@ export const initialBanners: Banner[] = [
     id: 'b2',
     title: '质量为本 服务至上',
     subtitle: '携手共创美好未来',
-    image: '/images/products/guanjiang-1.jpg',
+    image: '/images/banners/banners-2.jpg',
     link: '/about',
     order: 2
   },
@@ -226,7 +226,7 @@ export const initialBanners: Banner[] = [
     id: 'b3',
     title: '专业团队 技术领先',
     subtitle: '引领行业发展方向',
-    image: '/images/products/guanjiang-1.jpg',
+    image: '/images/banners/banners-3.jpg',
     link: '/cases',
     order: 3
   },
