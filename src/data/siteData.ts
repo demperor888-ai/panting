@@ -136,7 +136,7 @@ export const initialNews: News[] = [
     category: '公司动态',
     summary: '经过严格评审，我公司荣获省级高新技术企业认证，标志着公司技术创新能力获得认可。',
     content: '经过严格评审，我公司荣获省级高新技术企业认证，标志着公司技术创新能力获得认可。这是公司发展历程中的重要里程碑，我们将继续加大研发投入，为客户提供更优质的产品和服务。未来，公司将继续秉承"科技创新、质量为本"的理念，不断推出新产品，满足市场需求。',
-    image: '/images/products/guanjiang-1.jpg',
+    image: '/images/news/gxjsqy.jpg',
     date: '2024-01-15',
     views: 256
   },
