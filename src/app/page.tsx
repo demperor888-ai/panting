@@ -141,8 +141,9 @@ export default function HomePage() {
       </section>
 
       {/* 联系我们 */}
-      <section className="py-16 bg-primary-600 text-white">
-        <div className="max-w-7xl mx-auto px-4 text-center">
+      <section className="relative py-24 bg-cover bg-center text-white" style={{ backgroundImage: `url('/images/banners/xywmbz.jpg')` }}>
+        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="relative max-w-7xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">需要我们的帮助？</h2>
           <p className="text-primary-100 mb-8 max-w-2xl mx-auto">
             如果您对我们的产品感兴趣，或者有任何问题需要咨询，请随时联系我们。
