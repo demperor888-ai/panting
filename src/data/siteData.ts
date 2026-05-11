@@ -335,6 +335,62 @@ export const initialProducts: Product[] = [
     image: '/images/products/products-2.jpg',
     features: ['低粘度', '渗透性强', '硬度高', '无气泡']
   },
+  {
+    id: 'p36',
+    name: '混凝土防腐剂',
+    category: 'fangshui',
+    description: '专用于防止混凝土中钢筋腐蚀的化学材料，能有效提高混凝土结构耐久性和安全性，抑制钢筋腐蚀、提高密实度和抗渗性。',
+    image: '/images/products/products-2.jpg',
+    features: ['防腐阻锈', '提高密实度', '抗渗性好', '延长寿命']
+  },
+  {
+    id: 'p37',
+    name: '钢筋阻锈剂',
+    category: 'fangshui',
+    description: '专用于防止钢筋混凝土中钢筋锈蚀的化学材料，通过抑制钢筋腐蚀的电化学过程延长结构使用寿命，直接涂刷于钢筋起到钝化防腐作用。',
+    image: '/images/products/products-2.jpg',
+    features: ['钝化钢筋', '阻止腐蚀', '涂刷方便', '耐久可靠']
+  },
+  {
+    id: 'p38',
+    name: '透水砖增强剂',
+    category: 'fangshui',
+    description: '用于提升透水砖制品密实度、粘结强度及产品强度的综合增强材料，改善施工性能，实现透水砖生态环保和透水性能。',
+    image: '/images/products/products-2.jpg',
+    features: ['增强密实度', '提高强度', '生态环保', '透水性强']
+  },
+  {
+    id: 'p39',
+    name: '混凝土养护剂',
+    category: 'fangshui',
+    description: '液体成膜养护产品，喷涂于混凝土或砂浆表面后迅速形成无色不透水薄膜，防止水分蒸发，减缓混凝土收缩和开裂。',
+    image: '/images/products/products-2.jpg',
+    features: ['成膜快', '保水养护', '防开裂', '使用方便']
+  },
+  {
+    id: 'p40',
+    name: '聚合物弹性防水涂料',
+    category: 'fangshui',
+    description: '以合成高分子聚合物为主要成分，经乳化、分散、固化等工艺形成具有一定厚度和弹性的涂膜，起到防水、防腐、防漏作用。',
+    image: '/images/products/products-2.jpg',
+    features: ['弹性涂膜', '防水防漏', '防腐耐久', '附着力强']
+  },
+  {
+    id: 'p41',
+    name: '混凝土地面硬化剂',
+    category: 'fangshui',
+    description: '增强混凝土表面硬度和耐磨性能的化学材料，通过化学反应形成坚硬表面保护膜，提高混凝土表面硬度和抗渗性。',
+    image: '/images/products/products-2.jpg',
+    features: ['表面硬化', '高耐磨', '抗渗防尘', '施工简单']
+  },
+  {
+    id: 'p42',
+    name: '混凝土防护剂',
+    category: 'fangshui',
+    description: '用于保护混凝土结构的化学制剂，通过渗透作用形成网状聚硅氧烷高分子基团，固化为憎水层附着在毛细管内壁形成致密保护层。',
+    image: '/images/products/products-2.jpg',
+    features: ['渗透防护', '憎水耐久', '致密保护', '施工便捷']
+  },
 ];
 
 export const initialNews: News[] = [
