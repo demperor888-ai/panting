@@ -88,7 +88,6 @@ export const initialProducts: Product[] = [
     features: ['流动度大', '强度高', '微膨胀', '抗疲劳']
   },
   {
-  {
     id: 'p6',
     name: '聚合物防水砂浆',
     category: 'fangshui',
