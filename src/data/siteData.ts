@@ -88,13 +88,6 @@ export const initialProducts: Product[] = [
     features: ['流动度大', '强度高', '微膨胀', '抗疲劳']
   },
   {
-    id: 'p5',
-    name: '结构加固胶',
-    category: 'tezhong',
-    description: '用于建筑结构加固、植筋、粘钢等工程，强度高、耐老化。',
-    image: '/images/products/products-2.jpg',
-    features: ['高粘结力', '耐老化', '抗震动']
-  },
   {
     id: 'p6',
     name: '聚合物防水砂浆',
@@ -136,14 +129,6 @@ export const initialProducts: Product[] = [
     features: ['修复色差', '颜色可定制', '附着力强', '耐久性好']
   },
   {
-    id: 'p12',
-    name: '高强度植筋胶',
-    category: 'tezhong',
-    description: '双组分环氧树脂结构胶，用于混凝土结构加固修复，具有极高的粘结强度和耐腐蚀性及耐久性。',
-    image: '/images/products/products-2.jpg',
-    features: ['高粘结力', '耐腐蚀', '耐老化', '强度高']
-  },
-  {
     id: 'p13',
     name: '重载耐磨地面砂浆',
     category: 'shajiang',
@@ -182,22 +167,6 @@ export const initialProducts: Product[] = [
     description: '水泥基自流平材料，能够自动流平无需振捣，用于地板铺设前的地面找平处理。',
     image: '/images/products/products-2.jpg',
     features: ['自动流平', '无需振捣', '平整度高', '施工快捷']
-  },
-  {
-    id: 'p18',
-    name: '预应力钢绞线砂浆',
-    category: 'tezhong',
-    description: '水泥基锚固砂浆，作为全粘结预应力锚杆的锚固剂，通过灌浆将钢绞线与岩土粘结形成整体结构，用于边坡和隧道支护。',
-    image: '/images/products/products-2.jpg',
-    features: ['粘结力强', '锚固可靠', '耐久性好', '施工便捷']
-  },
-  {
-    id: 'p19',
-    name: '锚固砂浆',
-    category: 'tezhong',
-    description: '用于将锚杆与周围基体粘结灌浆的材料，形成全粘结锚固体系，主要应用于边坡治理、地下工程加固和稳定。',
-    image: '/images/products/products-2.jpg',
-    features: ['锚固力强', '稳定性好', '耐久可靠', '适应性广']
   },
   {
     id: 'p20',
@@ -310,22 +279,6 @@ export const initialProducts: Product[] = [
     description: '用于水下桩基、围堰、岩石灌浆、地下连续墙和防水堵漏工程的水下专用灌浆材料，具有优异的水下抗分散性。',
     image: '/images/products/products-2.jpg',
     features: ['水下抗分散', '堵漏止水', '粘结力强', '施工方便']
-  },
-  {
-    id: 'p34',
-    name: '灌注粘钢胶',
-    category: 'tezhong',
-    description: '专用于粘钢加固的结构胶，由环氧树脂和固化剂组成，用于将钢板粘贴到混凝土表面，具有高强度、耐久性、耐老化等综合性能。',
-    image: '/images/products/products-2.jpg',
-    features: ['高强度', '耐久性好', '耐老化', '粘结牢固']
-  },
-  {
-    id: 'p35',
-    name: '裂缝修补胶',
-    category: 'tezhong',
-    description: '以环氧树脂为主要成分的低粘度裂缝修补材料，渗透性好，适用于混凝土裂缝封闭和灌注，固化后表面平整、硬度高。',
-    image: '/images/products/products-2.jpg',
-    features: ['低粘度', '渗透性强', '硬度高', '无气泡']
   },
   {
     id: 'p36',
