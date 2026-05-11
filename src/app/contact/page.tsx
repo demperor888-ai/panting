@@ -45,7 +45,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <p className="text-sm text-gray-500">联系电话</p>
-                  <p className="text-lg font-semibold text-gray-800">{siteConfig.phone}</p>
+                  <p className="text-lg font-semibold text-gray-800">吴经理 {siteConfig.phone}</p>
                   <p className="text-sm text-gray-500 mt-1">{siteConfig.workingHours}</p>
                 </div>
               </div>
