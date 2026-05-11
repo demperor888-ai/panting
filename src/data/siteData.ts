@@ -297,11 +297,11 @@ export const initialProducts: Product[] = [
   },
   {
     id: 'p38',
-    name: '透水砖增强剂',
+    name: '透水砼胶结剂',
     category: 'fangshui',
-    description: '用于提升透水砖制品密实度、粘结强度及产品强度的综合增强材料，改善施工性能，实现透水砖生态环保和透水性能。',
+    description: '一种用于改善透水性铺装产品集料间粘结性能、提高产品强度的综合胶凝材料，适用于人行道、自行车道、公园绿地等透水混凝土施工场合。',
     image: '/images/products/products-2.jpg',
-    features: ['增强密实度', '提高强度', '生态环保', '透水性强']
+    features: ['高透水性', '抗压粘结强', '抗冻融', '耐久耐候']
   },
   {
     id: 'p39',
