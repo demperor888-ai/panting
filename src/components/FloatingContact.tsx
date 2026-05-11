@@ -8,7 +8,7 @@ export default function FloatingContact() {
     <>
       {/* 左侧在线咨询 - 始终展开 */}
       <div className="fixed left-4 top-1/2 -translate-y-1/2 mt-20 z-50">
-        <div className="bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl shadow-xl p-3 w-36">
+        <div className="bg-gradient-to-br from-blue-600/75 to-blue-700/75 backdrop-blur-sm rounded-xl shadow-xl p-3 w-36">
           <h4 className="text-xs font-bold text-white mb-2 border-b border-blue-400/50 pb-2 flex items-center gap-1.5">
             <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
