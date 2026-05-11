@@ -442,6 +442,16 @@ export const initialNews: News[] = [
     date: '2024-01-01',
     views: 456
   },
+  {
+    id: 'n5',
+    title: '探讨行业内的UHPC技术问题',
+    category: '行业资讯',
+    summary: '围绕UHPC（超高性能混凝土）的技术标准、定义和工程应用展开讨论，分析各国标准差异及中国UHPC发展方向。',
+    content: 'UHPC（超高性能混凝土）作为新型建筑材料，各国标准不一。法国AFGC指南和日本JSCE指南要求最低抗压强度150MPa，瑞士和美国标准定为120MPa。中国GB/T 31387-2015将最低强度定为100MPa。学术界对UHPC定义存在两种观点——一种认为它仍是混凝土，另一种认为它是不同于传统混凝土的水泥基材料。相比普通高性能混凝土，UHPC具有更好的抗压、抗拉强度和耐久性。钢-UHPC组合结构是创新方向之一，中国微细钢纤维价格较低有利于推广，但材料应用也存在技术和责任上的畏难情绪。',
+    image: '/images/news/gxjsqy.jpg',
+    date: '2025-02-11',
+    views: 128
+  },
 ];
 
 export const initialCases: Case[] = [
