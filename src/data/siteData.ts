@@ -143,6 +143,86 @@ export const initialProducts: Product[] = [
     image: '/images/products/products-2.jpg',
     features: ['不燃不爆', '高耐磨性', '高强度耐久', '环保安全', '施工方便']
   },
+  {
+    id: 'p10',
+    name: '混凝土CPC防碳化涂料',
+    category: 'fangshui',
+    description: '高性能液体聚合物-水泥复合防碳化材料，含有独特组分与水泥水化产物反应，形成聚合物-水泥互穿网络结构，有效防止混凝土碳化。',
+    image: '/images/products/products-2.jpg',
+    features: ['防碳化', '渗透性强', '粘结牢固', '耐候性好']
+  },
+  {
+    id: 'p11',
+    name: '混凝土色差修复剂',
+    category: 'fangshui',
+    description: '用于修补各类混凝土表面，包括路面、桥面、机场跑道等，解决起砂、开裂等表面问题，可定制多种颜色。',
+    image: '/images/products/products-2.jpg',
+    features: ['修复色差', '颜色可定制', '附着力强', '耐久性好']
+  },
+  {
+    id: 'p12',
+    name: '高强度植筋胶',
+    category: 'tezhong',
+    description: '双组分环氧树脂结构胶，用于混凝土结构加固修复，具有极高的粘结强度和耐腐蚀性及耐久性。',
+    image: '/images/products/products-2.jpg',
+    features: ['高粘结力', '耐腐蚀', '耐老化', '强度高']
+  },
+  {
+    id: 'p13',
+    name: '重载耐磨地面砂浆',
+    category: 'shajiang',
+    description: '特种干混砂浆，能够承受重型机械摩擦和冲击，适用于金属撞击易产生火花引发火灾或爆炸危险的环境。',
+    image: '/images/products/products-2.jpg',
+    features: ['高耐磨', '抗冲击', '耐重载', '使用寿命长']
+  },
+  {
+    id: 'p14',
+    name: '钢筋连接套筒灌浆料',
+    category: 'guanjiang',
+    description: '由水泥、细骨料、矿物掺合料预拌而成的干混砂浆，具有低泌水、流动度好、强度高、微膨胀不收缩特点，适用于装配式建筑连接和基础灌浆。',
+    image: '/images/products/products-2.jpg',
+    features: ['低泌水', '流动度好', '强度高', '微膨胀不收缩']
+  },
+  {
+    id: 'p15',
+    name: '风机基础专用灌浆料',
+    category: 'guanjiang',
+    description: '专为陆上风力发电机塔架基础灌浆设计，具有早强高强、均匀膨胀、抗疲劳性能，适用于精密设备安装。',
+    image: '/images/products/products-2.jpg',
+    features: ['早强高强', '均匀膨胀', '抗疲劳', '精密灌浆']
+  },
+  {
+    id: 'p16',
+    name: '保温砂浆',
+    category: 'fangshui',
+    description: '水泥基特种砂浆，具有保温隔热功能，适用于内外墙及屋顶保温层，满足建筑节能要求。',
+    image: '/images/products/products-2.jpg',
+    features: ['保温隔热', '节能环保', '施工方便', '粘结力强']
+  },
+  {
+    id: 'p17',
+    name: '自流平砂浆',
+    category: 'shajiang',
+    description: '水泥基自流平材料，能够自动流平无需振捣，用于地板铺设前的地面找平处理。',
+    image: '/images/products/products-2.jpg',
+    features: ['自动流平', '无需振捣', '平整度高', '施工快捷']
+  },
+  {
+    id: 'p18',
+    name: '预应力钢绞线砂浆',
+    category: 'tezhong',
+    description: '水泥基锚固砂浆，作为全粘结预应力锚杆的锚固剂，通过灌浆将钢绞线与岩土粘结形成整体结构，用于边坡和隧道支护。',
+    image: '/images/products/products-2.jpg',
+    features: ['粘结力强', '锚固可靠', '耐久性好', '施工便捷']
+  },
+  {
+    id: 'p19',
+    name: '锚固砂浆',
+    category: 'tezhong',
+    description: '用于将锚杆与周围基体粘结灌浆的材料，形成全粘结锚固体系，主要应用于边坡治理、地下工程加固和稳定。',
+    image: '/images/products/products-2.jpg',
+    features: ['锚固力强', '稳定性好', '耐久可靠', '适应性广']
+  },
 ];
 
 export const initialNews: News[] = [
