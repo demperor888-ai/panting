@@ -447,6 +447,14 @@ export const initialProducts: Product[] = [
     image: '/images/products/products-2.jpg',
     features: ['高强度', '粘结牢固', '耐老化', '施工性好']
   },
+  {
+    id: 'p50',
+    name: '硅烷浸渍剂',
+    category: 'fangshui',
+    description: '以硅烷为主要成分的混凝土防护浸渍材料，能深层渗透混凝土内部形成憎水层，有效阻止水分和氯离子侵入，提高混凝土耐久性。',
+    image: '/images/products/products-2.jpg',
+    features: ['深层渗透', '憎水防护', '抗氯离子', '耐久性好']
+  },
 ];
 
 export const initialNews: News[] = [
