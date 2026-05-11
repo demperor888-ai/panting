@@ -81,11 +81,11 @@ export const initialProducts: Product[] = [
   },
   {
     id: 'p2',
-    name: 'CGM高强灌浆料',
+    name: 'CGM风电专用灌浆料',
     category: 'guanjiang',
-    description: '广泛应用于重型机械、精密设备安装灌浆，桥梁支座灌浆等工程领域。',
+    description: '主要应用于陆上风力发电机超高强度水泥基灌浆，无收缩水泥基灌浆材料，具有高早期强度和终强度，高耐疲劳性，适用于风电等大型设备基础二次灌浆。',
     image: '/images/products/products-2.jpg',
-    features: ['流动度大', '强度高', '微膨胀', '抗疲劳']
+    features: ['强度超高', '粘结力强', '耐久性好', '施工方便', '环保性好']
   },
   {
     id: 'p6',
@@ -452,7 +452,7 @@ export const initialCases: Case[] = [
     location: '河南省郑州市',
     description: '为年产500万吨钢铁厂提供设备基础灌浆服务，使用我公司高强度灌浆料，工程质量优良，获得客户高度评价。项目历时3个月，灌浆面积超过5000平方米。',
     image: '/images/cases/dxgtc.jpg',
-    products: ['高强度无收缩灌浆料', 'CGM高强灌浆料'],
+    products: ['高强度无收缩灌浆料', 'CGM风电专用灌浆料'],
     date: '2023-12-01'
   },
   {
@@ -462,7 +462,7 @@ export const initialCases: Case[] = [
     location: '河南省洛阳市',
     description: '参与高速公路桥梁建设，提供桥梁支座灌浆材料和技术支持，确保工程质量。项目全长15公里，共20座桥梁，使用灌浆料100余吨。',
     image: '/images/cases/gsgl.jpg',
-    products: ['CGM高强灌浆料'],
+    products: ['CGM风电专用灌浆料'],
     date: '2023-11-15'
   },
   {
