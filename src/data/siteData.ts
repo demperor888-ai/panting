@@ -104,14 +104,6 @@ export const initialProducts: Product[] = [
     features: ['抗渗性强', '粘结牢固', '耐腐蚀']
   },
   {
-    id: 'p7',
-    name: '装配式专用砂浆',
-    category: 'zhuangpeishi',
-    description: '专为装配式建筑开发，用于预制构件接缝、灌浆连接。',
-    image: '/images/products/products-2.jpg',
-    features: ['流动性好', '强度发展快', '连接可靠']
-  },
-  {
     id: 'p8',
     name: '丙乳砂浆',
     category: 'shajiang',
