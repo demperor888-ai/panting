@@ -207,6 +207,70 @@ export const initialProducts: Product[] = [
     image: '/images/products/products-2.jpg',
     features: ['锚固力强', '稳定性好', '耐久可靠', '适应性广']
   },
+  {
+    id: 'p20',
+    name: '重载防静电砂浆',
+    category: 'shajiang',
+    description: '防静电特种砂浆，在摩擦或撞击时不产生火花，适用于处理易燃易爆材料的环境，具有防静电和防爆双重功能。',
+    image: '/images/products/products-2.jpg',
+    features: ['防静电', '防爆防火', '高耐磨', '安全可靠']
+  },
+  {
+    id: 'p21',
+    name: '隔音砂浆',
+    category: 'shajiang',
+    description: '水泥基隔音特种砂浆，用于内墙和楼板隔音，有效解决冲击噪声和空气传声问题。',
+    image: '/images/products/products-2.jpg',
+    features: ['隔音降噪', '施工便捷', '粘结力强', '环保无害']
+  },
+  {
+    id: 'p22',
+    name: '找平砂浆',
+    category: 'shajiang',
+    description: '水泥基找平材料，具有高流动性、自密实特性，无需人工振捣即可自动找平。',
+    image: '/images/products/products-2.jpg',
+    features: ['自流平', '高流动性', '平整度高', '省工省时']
+  },
+  {
+    id: 'p23',
+    name: '锚栓砂浆',
+    category: 'shajiang',
+    description: '以水泥砂浆作为粘结剂的全粘结锚栓材料，将锚栓与周围岩土粘结形成整体，用于边坡和岩体结构加固。',
+    image: '/images/products/products-2.jpg',
+    features: ['锚固可靠', '粘结力强', '耐久稳定', '施工方便']
+  },
+  {
+    id: 'p24',
+    name: '界面砂浆',
+    category: 'shajiang',
+    description: '用于不同基层之间的粘结材料，提供新旧抹灰层之间的双面粘结力，防止空鼓、开裂和剥落。',
+    image: '/images/products/products-2.jpg',
+    features: ['双面粘结', '防空鼓', '防开裂', '附着力强']
+  },
+  {
+    id: 'p25',
+    name: '自密实砂浆',
+    category: 'shajiang',
+    description: '高性能特种砂浆，具有高流动性、耐候性和填充性，能自动填充复杂模板并包裹钢筋形成密实结构。',
+    image: '/images/products/products-2.jpg',
+    features: ['自密实', '高流动性', '填充性好', '耐候性强']
+  },
+  {
+    id: 'p26',
+    name: '导电砂浆',
+    category: 'shajiang',
+    description: '采用石墨、碳黑等导电材料制成的特种砂浆，能有效传导静电，28天抗压强度超过100N/mm²，48小时内可使用。',
+    image: '/images/products/products-2.jpg',
+    features: ['导电防静电', '强度高', '硬化快', '性能稳定']
+  },
+  {
+    id: 'p27',
+    name: '无机防水砂浆',
+    category: 'shajiang',
+    description: '以无机结晶防水为核心组分的水泥砂浆，能形成结晶防水层，有效防止渗漏。',
+    image: '/images/products/products-2.jpg',
+    features: ['结晶防水', '抗渗性强', '耐久性好', '环保安全']
+  },
 ];
 
 export const initialNews: News[] = [
