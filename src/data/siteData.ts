@@ -88,22 +88,6 @@ export const initialProducts: Product[] = [
     features: ['流动度大', '强度高', '微膨胀', '抗疲劳']
   },
   {
-    id: 'p3',
-    name: '砌筑砂浆',
-    category: 'guanjiang',
-    description: '用于砌筑各种墙体材料，具有良好的和易性和粘结强度。',
-    image: '/images/products/products-2.jpg',
-    features: ['保水性好', '粘结力强', '施工方便']
-  },
-  {
-    id: 'p4',
-    name: '抹灰砂浆',
-    category: 'guanjiang',
-    description: '室内外墙面抹灰，表面平整光滑，不开裂、不空鼓。',
-    image: '/images/products/products-2.jpg',
-    features: ['不开裂', '不空鼓', '表面细腻']
-  },
-  {
     id: 'p5',
     name: '结构加固胶',
     category: 'tezhong',
