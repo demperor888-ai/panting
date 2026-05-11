@@ -319,6 +319,22 @@ export const initialProducts: Product[] = [
     image: '/images/products/products-2.jpg',
     features: ['水下抗分散', '堵漏止水', '粘结力强', '施工方便']
   },
+  {
+    id: 'p34',
+    name: '灌注粘钢胶',
+    category: 'tezhong',
+    description: '专用于粘钢加固的结构胶，由环氧树脂和固化剂组成，用于将钢板粘贴到混凝土表面，具有高强度、耐久性、耐老化等综合性能。',
+    image: '/images/products/products-2.jpg',
+    features: ['高强度', '耐久性好', '耐老化', '粘结牢固']
+  },
+  {
+    id: 'p35',
+    name: '裂缝修补胶',
+    category: 'tezhong',
+    description: '以环氧树脂为主要成分的低粘度裂缝修补材料，渗透性好，适用于混凝土裂缝封闭和灌注，固化后表面平整、硬度高。',
+    image: '/images/products/products-2.jpg',
+    features: ['低粘度', '渗透性强', '硬度高', '无气泡']
+  },
 ];
 
 export const initialNews: News[] = [
