@@ -6,20 +6,15 @@ import { productCategories } from '@/data/siteData';
 export default function FloatingContact() {
   return (
     <>
-      {/* 左侧在线咨询 */}
-      <div className="fixed left-4 bottom-24 z-50 group">
-        <div className="w-12 h-12 bg-orange-500 text-white rounded-full flex items-center justify-center shadow-lg hover:bg-orange-600 transition cursor-pointer relative">
-          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
-          </svg>
-          <span className="absolute left-14 bg-gray-800 text-white text-sm px-3 py-1 rounded-lg opacity-0 group-hover:opacity-100 transition whitespace-nowrap">
+      {/* 左侧在线咨询 - 始终展开 */}
+      <div className="fixed left-4 bottom-24 z-50">
+        <div className="bg-white rounded-xl shadow-2xl p-4 w-44">
+          <h4 className="text-sm font-bold text-gray-800 mb-2 border-b pb-2 flex items-center gap-2">
+            <svg className="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+            </svg>
             在线咨询
-          </span>
-        </div>
-
-        {/* 展开的分类列表 */}
-        <div className="absolute left-14 bottom-0 bg-white rounded-xl shadow-2xl p-4 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-          <h4 className="text-sm font-bold text-gray-800 mb-2 border-b pb-2">产品分类咨询</h4>
+          </h4>
           <div className="space-y-1">
             {productCategories.map((cat) => (
               <Link
