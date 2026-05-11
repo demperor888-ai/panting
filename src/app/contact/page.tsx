@@ -75,8 +75,8 @@ export default function ContactPage() {
                   <span className="text-2xl">💬</span>
                 </div>
                 <div>
-                  <p className="text-sm text-gray-500">微信/QQ</p>
-                  <p className="text-lg font-semibold text-gray-800">微信: {siteConfig.wechat} / QQ: {siteConfig.qq}</p>
+                  <p className="text-sm text-gray-500">微信扫码联系</p>
+                  <img src="/images/banners/wx.png" alt="微信二维码" className="w-28 h-28 rounded-lg mt-1" />
                 </div>
               </div>
             </div>
