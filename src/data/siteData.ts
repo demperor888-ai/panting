@@ -257,7 +257,7 @@ export const initialProducts: Product[] = [
   },
   {
     id: 'p31',
-    name: '水性环氧树脂灌浆料',
+    name: '环氧树脂灌浆料',
     category: 'guanjiang',
     description: '由水性环氧树脂和水性固化剂组成，与水泥基灌浆料混合形成有机-无机复合网络结构，粘结强度高，抗渗耐化学性好。',
     image: '/images/products/products-2.jpg',
