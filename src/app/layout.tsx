@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import FloatingContact from '@/components/FloatingContact';
 
 export const metadata: Metadata = {
   title: '河南磐霆速科新材料科技有限公司',
@@ -19,6 +20,7 @@ export default function RootLayout({
       <body className="min-h-screen flex flex-col">
         <Header />
         <main className="flex-1">{children}</main>
+        <FloatingContact />
         <Footer />
       </body>
     </html>
