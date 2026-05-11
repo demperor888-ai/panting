@@ -271,6 +271,54 @@ export const initialProducts: Product[] = [
     image: '/images/products/products-2.jpg',
     features: ['结晶防水', '抗渗性强', '耐久性好', '环保安全']
   },
+  {
+    id: 'p28',
+    name: '压浆料',
+    category: 'guanjiang',
+    description: '专用水泥基材料，主要由水泥、高效减水剂、膨胀剂和多种外加剂组成，具有良好流动性、稳定性、膨胀性和粘度，用于后张预应力管道灌浆。',
+    image: '/images/products/products-2.jpg',
+    features: ['流动性好', '稳定性强', '膨胀性佳', '施工便捷']
+  },
+  {
+    id: 'p29',
+    name: '预应力管道压浆料',
+    category: 'guanjiang',
+    description: '专用水泥基灌浆材料，适用于公路、铁路、核电等工程的有粘结预应力管道灌浆。',
+    image: '/images/products/products-2.jpg',
+    features: ['高压灌注', '密实填充', '粘结可靠', '耐久性强']
+  },
+  {
+    id: 'p30',
+    name: '超细水泥灌浆料',
+    category: 'guanjiang',
+    description: '采用高强度超细水泥、膨胀剂和稳定剂制成的均匀无机超细灌浆材料，具有超细粒径、高强度、不离析的特点。',
+    image: '/images/products/products-2.jpg',
+    features: ['超细粒径', '高强度', '不离析', '渗透性强']
+  },
+  {
+    id: 'p31',
+    name: '水性环氧树脂灌浆料',
+    category: 'guanjiang',
+    description: '由水性环氧树脂和水性固化剂组成，与水泥基灌浆料混合形成有机-无机复合网络结构，粘结强度高，抗渗耐化学性好。',
+    image: '/images/products/products-2.jpg',
+    features: ['粘结强度高', '抗渗性好', '耐化学腐蚀', '固化快']
+  },
+  {
+    id: 'p32',
+    name: '轨道支座灌浆料',
+    category: 'guanjiang',
+    description: '高性能干粉灌浆材料，主要用于铁路、公路、桥梁等工程中的支座安装灌浆。',
+    image: '/images/products/products-2.jpg',
+    features: ['高强耐久', '微膨胀', '流动度好', '安装精准']
+  },
+  {
+    id: 'p33',
+    name: '水下抗分散灌浆料',
+    category: 'guanjiang',
+    description: '用于水下桩基、围堰、岩石灌浆、地下连续墙和防水堵漏工程的水下专用灌浆材料，具有优异的水下抗分散性。',
+    image: '/images/products/products-2.jpg',
+    features: ['水下抗分散', '堵漏止水', '粘结力强', '施工方便']
+  },
 ];
 
 export const initialNews: News[] = [
