@@ -7,7 +7,7 @@ export default function FloatingContact() {
   return (
     <>
       {/* 左侧在线咨询 - 始终展开 */}
-      <div className="fixed left-4 bottom-24 z-50">
+      <div className="fixed left-4 bottom-60 z-50">
         <div className="bg-white rounded-xl shadow-2xl p-4 w-44">
           <h4 className="text-sm font-bold text-gray-800 mb-2 border-b pb-2 flex items-center gap-2">
             <svg className="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
