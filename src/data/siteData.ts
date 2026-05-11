@@ -52,10 +52,10 @@ export interface SiteConfig {
 
 export const productCategories = [
   { id: 'guanjiang', name: '灌浆料系列' },
-  { id: 'shajiang', name: '建筑砂浆系列' },
+  { id: 'shajiang', name: '特种砂浆系列' },
   { id: 'tezhong', name: '建筑结构胶系列' },
-  { id: 'fangshui', name: '防水堵漏系列' },
-  { id: 'zhuangpeishi', name: '装配式墙面砂浆系列' },
+  { id: 'fangshui', name: '防水防腐系列' },
+  { id: 'zhuangpeishi', name: '建筑外墙砂浆系列' },
 ];
 
 export const siteConfig: SiteConfig = {
