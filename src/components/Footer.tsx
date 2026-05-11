@@ -62,7 +62,10 @@ export default function Footer() {
               </li>
               <li className="flex items-center space-x-2">
                 <span>💬</span>
-                <span>微信: {siteConfig.wechat}</span>
+                <span>微信扫码联系</span>
+              </li>
+              <li>
+                <img src="/images/banners/wx.png" alt="微信二维码" className="w-24 h-24 rounded-lg mt-2" />
               </li>
             </ul>
           </div>
