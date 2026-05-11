@@ -178,7 +178,7 @@ export const initialProducts: Product[] = [
   {
     id: 'p16',
     name: '保温砂浆',
-    category: 'fangshui',
+    category: 'zhuangpeishi',
     description: '水泥基特种砂浆，具有保温隔热功能，适用于内外墙及屋顶保温层，满足建筑节能要求。',
     image: '/images/products/products-2.jpg',
     features: ['保温隔热', '节能环保', '施工方便', '粘结力强']
