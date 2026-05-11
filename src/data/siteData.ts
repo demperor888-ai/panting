@@ -53,7 +53,7 @@ export interface SiteConfig {
 export const productCategories = [
   { id: 'guanjiang', name: '灌浆料系列' },
   { id: 'shajiang', name: '建筑砂浆系列' },
-  { id: 'tezhong', name: '特种结构系列' },
+  { id: 'tezhong', name: '建筑结构胶系列' },
   { id: 'fangshui', name: '防水堵漏系列' },
   { id: 'zhuangpeishi', name: '装配式墙面砂浆系列' },
 ];
