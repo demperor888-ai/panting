@@ -145,11 +145,11 @@ export const initialProducts: Product[] = [
   },
   {
     id: 'p15',
-    name: '风机基础专用灌浆料',
+    name: '桥梁支座灌浆料',
     category: 'guanjiang',
-    description: '专为陆上风力发电机塔架基础灌浆设计，具有早强高强、均匀膨胀、抗疲劳性能，适用于精密设备安装。',
+    description: '高性能特种灌浆材料，主要适用于铁路、公路、桥梁等工程中的支座安装灌浆，以高强度骨料、高分子聚合物及各种外加剂混合而成的干混水泥基灌浆材料。',
     image: '/images/products/products-2.jpg',
-    features: ['早强高强', '均匀膨胀', '抗疲劳', '精密灌浆']
+    features: ['和易性好', '早强高强', '微膨胀', '可低温施工']
   },
   {
     id: 'p16',
