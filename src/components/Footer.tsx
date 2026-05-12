@@ -50,7 +50,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-gray-400">
               <li className="flex items-center space-x-2">
                 <span>📞</span>
-                <span>{siteConfig.phone}</span>
+                <span>吴经理 {siteConfig.phone}</span>
               </li>
               <li className="flex items-center space-x-2">
                 <span>📧</span>
