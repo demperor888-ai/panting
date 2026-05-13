@@ -156,7 +156,7 @@ export const initialProducts: Product[] = [
     name: '保温砂浆',
     category: 'zhuangpeishi',
     description: '水泥基特种砂浆，具有保温隔热功能，适用于内外墙及屋顶保温层，满足建筑节能要求。',
-    image: '/images/products/products-2.jpg',
+    image: '/images/products/products-1.jpg',
     features: ['保温隔热', '节能环保', '施工方便', '粘结力强']
   },
   {
@@ -340,7 +340,7 @@ export const initialProducts: Product[] = [
     name: '加强聚合物砂浆',
     category: 'zhuangpeishi',
     description: '高分子合成材料，具有高粘结力、抗裂性和施工性，兼具防水、耐磨、耐老化性能，适用于建筑保温板之间及防水耐磨装饰。',
-    image: '/images/products/products-2.jpg',
+    image: '/images/products/products-1.jpg',
     features: ['粘结力强', '抗裂性好', '防水耐磨', '耐老化']
   },
   {
@@ -348,7 +348,7 @@ export const initialProducts: Product[] = [
     name: '粘结砂浆',
     category: 'zhuangpeishi',
     description: '由水泥、石灰、石英砂和聚合物组成的粘结材料，用于瓷砖、石材等装饰材料与墙面的粘结，具有良好的施工性和附着力。',
-    image: '/images/products/products-2.jpg',
+    image: '/images/products/products-1.jpg',
     features: ['附着力强', '施工性好', '粘结牢固', '不空鼓']
   },
   {
@@ -356,7 +356,7 @@ export const initialProducts: Product[] = [
     name: '聚合物抗裂砂浆',
     category: 'zhuangpeishi',
     description: '改性合成材料，兼具聚合物粘结力和无机材料耐久性，抗压强度高、固化迅速、粘结性好、保水性佳，适用于潮湿基面施工。',
-    image: '/images/products/products-2.jpg',
+    image: '/images/products/products-1.jpg',
     features: ['抗压强度高', '固化迅速', '保水性好', '柔性抗裂']
   },
   {
