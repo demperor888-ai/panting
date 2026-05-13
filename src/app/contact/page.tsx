@@ -71,16 +71,16 @@ export default function ContactPage() {
               </div>
             </div>
 
-            {/* 高德地图 */}
-            <div className="mt-8 h-72 rounded-xl overflow-hidden">
-              <iframe
-                title="公司位置"
-                className="w-full h-full border-0"
-                src="https://uri.amap.com/marker?position=113.6201,34.7496&name=河南磐霆速科新材料科技有限公司&callnative=1"
-                allowFullScreen
+            {/* 腾讯地图静态图 */}
+            <a href="https://map.qq.com/?type=marker&isopeninfowin=1&markertype=1&pointx=113.6201&pointy=34.7496&name=河南磐霆速科新材料科技有限公司&ref=WeChat" target="_blank" rel="noopener noreferrer" className="block mt-8 rounded-xl overflow-hidden group">
+              <img
+                src="https://apis.map.qq.com/ws/staticmap/v2/?center=113.6201,34.7496&zoom=14&size=600*300&markers=color:red|label:A|113.6201,34.7496&key=UGMBZ-CINWR-6DRW5-WXM6J-5F5K2-UXB2T"
+                alt="公司位置 - 河南省郑州市高新技术产业开发区"
+                className="w-full h-72 object-cover group-hover:opacity-90 transition"
               />
               <p className="text-xs text-gray-400 mt-1 text-center">河南省郑州市高新技术产业开发区</p>
-            </div>
+              <p className="text-xs text-primary-500 mt-0.5 text-center group-hover:underline">点击查看导航 →</p>
+            </a>
           </div>
 
           {/* 在线留言 */}
