@@ -364,7 +364,7 @@ export const initialProducts: Product[] = [
     name: '环氧植筋胶',
     category: 'tezhong',
     description: '双组分环氧树脂结构胶，用于混凝土结构植筋加固，具有极高的粘结强度和耐腐蚀性能。',
-    image: '/images/products/products-2.jpg',
+    image: '/images/products/products-3.jpg',
     features: ['粘结力强', '耐腐蚀', '耐久性好', '强度高']
   },
   {
@@ -372,7 +372,7 @@ export const initialProducts: Product[] = [
     name: '环氧封缝胶',
     category: 'tezhong',
     description: '环氧树脂基裂缝封闭材料，用于混凝土表面裂缝的封闭处理，防止水分和有害物质渗入。',
-    image: '/images/products/products-2.jpg',
+    image: '/images/products/products-3.jpg',
     features: ['封闭性好', '附着力强', '耐候耐久', '施工简便']
   },
   {
@@ -380,7 +380,7 @@ export const initialProducts: Product[] = [
     name: '环氧灌缝胶',
     category: 'tezhong',
     description: '低粘度环氧树脂灌缝材料，具有优异的渗透性，可深入混凝土细微裂缝进行灌注修复。',
-    image: '/images/products/products-2.jpg',
+    image: '/images/products/products-3.jpg',
     features: ['低粘度', '渗透性强', '强度高', '固化稳定']
   },
   {
@@ -388,7 +388,7 @@ export const initialProducts: Product[] = [
     name: '环氧粘钢胶',
     category: 'tezhong',
     description: '环氧树脂基粘钢专用结构胶，用于将钢板粘贴到混凝土表面进行结构补强，具有高强度和高耐久性。',
-    image: '/images/products/products-2.jpg',
+    image: '/images/products/products-3.jpg',
     features: ['高强度', '粘结牢固', '耐老化', '施工性好']
   },
   {
