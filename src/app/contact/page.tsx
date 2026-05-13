@@ -71,13 +71,15 @@ export default function ContactPage() {
               </div>
             </div>
 
-            {/* 地图占位 */}
-            <div className="mt-8 h-64 bg-gray-200 rounded-xl flex items-center justify-center">
-              <div className="text-center text-gray-500">
-                <span className="text-4xl block mb-2">🗺️</span>
-                <p>地图加载中...</p>
-                <p className="text-sm mt-1">可集成百度/高德地图</p>
-              </div>
+            {/* 高德地图 */}
+            <div className="mt-8 h-72 rounded-xl overflow-hidden">
+              <iframe
+                title="公司位置"
+                className="w-full h-full border-0"
+                src="https://uri.amap.com/marker?position=113.6201,34.7496&name=河南磐霆速科新材料科技有限公司&callnative=1"
+                allowFullScreen
+              />
+              <p className="text-xs text-gray-400 mt-1 text-center">河南省郑州市高新技术产业开发区</p>
             </div>
           </div>
 
