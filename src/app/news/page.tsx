@@ -14,27 +14,27 @@ export default function NewsPage() {
     : initialNews.filter(n => n.category === activeCategory);
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen">
       {/* 顶部Banner */}
-      <div className="relative text-white py-24 bg-cover bg-center" style={{ backgroundImage: `url('/images/banners/bg-1.jpg')` }}>
-        <div className="absolute inset-0 bg-black/50"></div>
+      <div className="page-banner" style={{ backgroundImage: `url('/images/banners/bg-1.jpg')` }}>
+        <div className="page-banner-overlay" />
         <div className="relative max-w-7xl mx-auto px-4 text-center">
           <h1 className="text-4xl font-bold">新闻资讯</h1>
-          <p className="mt-2 text-gray-200">了解行业动态，掌握最新资讯</p>
+          <p className="mt-2 text-dark-300">了解行业动态，掌握最新资讯</p>
         </div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 py-12">
         {/* 分类筛选 */}
-        <div className="flex flex-wrap justify-center gap-4 mb-8">
+        <div className="flex flex-wrap justify-center gap-3 mb-10">
           {categories.map((cat) => (
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}
-              className={`px-6 py-2 rounded-full transition ${
+              className={`px-6 py-2.5 rounded-full font-medium transition-all duration-300 ${
                 activeCategory === cat
-                  ? 'bg-primary-600 text-white'
-                  : 'bg-white text-gray-600 hover:bg-gray-100'
+                  ? 'bg-gradient-tech text-white shadow-glow'
+                  : 'glass-card text-dark-500 hover:text-primary-600 hover:border-primary-300'
               }`}
             >
               {cat}
@@ -50,7 +50,7 @@ export default function NewsPage() {
         </div>
 
         {filteredNews.length === 0 && (
-          <div className="text-center py-12 text-gray-500">
+          <div className="text-center py-12 text-dark-400">
             暂无该分类新闻
           </div>
         )}
