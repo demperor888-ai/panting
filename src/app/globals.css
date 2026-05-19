@@ -4,26 +4,26 @@
 
 /* ===== 设计令牌 ===== */
 :root {
-  --gradient-start: #4f46e5;
-  --gradient-mid: #6366f1;
-  --gradient-end: #0891b2;
-  --glow-color: rgba(79, 70, 229, 0.4);
+  --gradient-start: #1e3a5f;
+  --gradient-mid: #3a6080;
+  --gradient-end: #c9a84c;
+  --glow-color: rgba(201, 168, 76, 0.4);
   --glass-bg: rgba(255, 255, 255, 0.72);
   --glass-border: rgba(255, 255, 255, 0.6);
   --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
-  --text-primary: #1e293b;
-  --text-secondary: #475569;
-  --text-muted: #94a3b8;
+  --text-primary: #152033;
+  --text-secondary: #3d4d61;
+  --text-muted: #8d9aab;
 }
 
 /* ===== 全局基础 ===== */
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans SC', sans-serif;
-  background-color: #f8fafc;
+  background-color: #f7f8fa;
   background-image:
-    radial-gradient(circle at 20% 50%, rgba(79, 70, 229, 0.03) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(6, 182, 212, 0.03) 0%, transparent 50%),
-    radial-gradient(circle at 50% 80%, rgba(99, 102, 241, 0.02) 0%, transparent 50%);
+    radial-gradient(circle at 20% 50%, rgba(30, 58, 95, 0.04) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(201, 168, 76, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 50% 80%, rgba(38, 75, 107, 0.03) 0%, transparent 50%);
   background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
 }
@@ -36,11 +36,11 @@ body {
   background: #f1f5f9;
 }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #6366f1, #0891b2);
+  background: linear-gradient(180deg, #1e3a5f, #c9a84c);
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, #4f46e5, #0e7490);
+  background: linear-gradient(180deg, #264b6b, #b8942f);
 }
 
 /* ===== 关键帧动画 ===== */
@@ -61,8 +61,8 @@ body {
   50% { transform: translateY(-10px); }
 }
 @keyframes pulseGlow {
-  0%, 100% { box-shadow: 0 0 5px rgba(79, 70, 229, 0.2); }
-  50% { box-shadow: 0 0 20px rgba(79, 70, 229, 0.5); }
+  0%, 100% { box-shadow: 0 0 5px rgba(201, 168, 76, 0.2); }
+  50% { box-shadow: 0 0 20px rgba(201, 168, 76, 0.5); }
 }
 
 /* ===== 工具类 ===== */
@@ -88,13 +88,13 @@ body {
 
 /* 发光按钮 */
 .glow-btn {
-  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  background: linear-gradient(135deg, #1e3a5f, #3a6080);
   @apply text-white font-semibold rounded-lg;
-  box-shadow: 0 4px 14px rgba(79, 70, 229, 0.3);
+  box-shadow: 0 4px 14px rgba(201, 168, 76, 0.3);
   transition: all 0.3s ease;
 }
 .glow-btn:hover {
-  box-shadow: 0 6px 24px rgba(79, 70, 229, 0.5);
+  box-shadow: 0 6px 24px rgba(201, 168, 76, 0.5);
   transform: translateY(-2px);
 }
 
@@ -107,7 +107,7 @@ body {
   position: absolute;
   inset: 0;
   opacity: 0.4;
-  background-image: radial-gradient(circle, rgba(79, 70, 229, 0.15) 1px, transparent 1px);
+  background-image: radial-gradient(circle, rgba(30, 58, 95, 0.15) 1px, transparent 1px);
   background-size: 24px 24px;
   pointer-events: none;
 }
@@ -129,14 +129,14 @@ body {
 }
 .btn-outline {
   @apply border-2 font-semibold px-6 py-3 rounded-lg transition-all duration-300;
-  border-color: #4f46e5;
-  color: #4f46e5;
+  border-color: #1e3a5f;
+  color: #1e3a5f;
 }
 .btn-outline:hover {
   @apply text-white;
-  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  background: linear-gradient(135deg, #1e3a5f, #3a6080);
   border-color: transparent;
-  box-shadow: 0 4px 14px rgba(79, 70, 229, 0.3);
+  box-shadow: 0 4px 14px rgba(201, 168, 76, 0.3);
 }
 
 /* 卡片（兼容旧引用） */
@@ -148,7 +148,7 @@ body {
 .heading-underline {
   @apply h-1 mx-auto mt-4 rounded-full;
   width: 80px;
-  background: linear-gradient(90deg, #4f46e5, #0891b2);
+  background: linear-gradient(90deg, #1e3a5f, #c9a84c);
 }
 
 /* 页面Banner通用样式 */
@@ -157,5 +157,5 @@ body {
 }
 .page-banner-overlay {
   @apply absolute inset-0;
-  background: linear-gradient(135deg, rgba(15, 23, 42, 0.85) 0%, rgba(30, 41, 59, 0.7) 100%);
+  background: linear-gradient(135deg, rgba(10, 21, 38, 0.85) 0%, rgba(21, 32, 51, 0.7) 100%);
 }
