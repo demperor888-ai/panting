@@ -4,26 +4,26 @@
 
 /* ===== 设计令牌 ===== */
 :root {
-  --gradient-start: #1e3a5f;
-  --gradient-mid: #3a6080;
-  --gradient-end: #c9a84c;
-  --glow-color: rgba(201, 168, 76, 0.4);
+  --gradient-start: #1a1a1a;
+  --gradient-mid: #333333;
+  --gradient-end: #d4a853;
+  --glow-color: rgba(212, 168, 83, 0.4);
   --glass-bg: rgba(255, 255, 255, 0.72);
   --glass-border: rgba(255, 255, 255, 0.6);
-  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
-  --text-primary: #152033;
-  --text-secondary: #3d4d61;
-  --text-muted: #8d9aab;
+  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  --text-primary: #0d0d0d;
+  --text-secondary: #333333;
+  --text-muted: #999999;
 }
 
 /* ===== 全局基础 ===== */
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans SC', sans-serif;
-  background-color: #f7f8fa;
+  background-color: #fafafa;
   background-image:
-    radial-gradient(circle at 20% 50%, rgba(30, 58, 95, 0.04) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(201, 168, 76, 0.03) 0%, transparent 50%),
-    radial-gradient(circle at 50% 80%, rgba(38, 75, 107, 0.03) 0%, transparent 50%);
+    radial-gradient(circle at 20% 50%, rgba(212, 168, 83, 0.02) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(0, 0, 0, 0.02) 0%, transparent 50%),
+    radial-gradient(circle at 50% 80%, rgba(212, 168, 83, 0.02) 0%, transparent 50%);
   background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
 }
@@ -36,11 +36,11 @@ body {
   background: #f1f5f9;
 }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #1e3a5f, #c9a84c);
+  background: linear-gradient(180deg, #1a1a1a, #d4a853);
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, #264b6b, #b8942f);
+  background: linear-gradient(180deg, #333333, #c49a3c);
 }
 
 /* ===== 关键帧动画 ===== */
@@ -61,8 +61,8 @@ body {
   50% { transform: translateY(-10px); }
 }
 @keyframes pulseGlow {
-  0%, 100% { box-shadow: 0 0 5px rgba(201, 168, 76, 0.2); }
-  50% { box-shadow: 0 0 20px rgba(201, 168, 76, 0.5); }
+  0%, 100% { box-shadow: 0 0 5px rgba(212, 168, 83, 0.2); }
+  50% { box-shadow: 0 0 20px rgba(212, 168, 83, 0.5); }
 }
 
 /* ===== 工具类 ===== */
@@ -74,7 +74,7 @@ body {
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .glass-card:hover {
-  box-shadow: 0 12px 40px rgba(79, 70, 229, 0.12);
+  box-shadow: 0 12px 40px rgba(212, 168, 83, 0.1);
   transform: translateY(-4px);
 }
 
@@ -88,13 +88,13 @@ body {
 
 /* 发光按钮 */
 .glow-btn {
-  background: linear-gradient(135deg, #1e3a5f, #3a6080);
+  background: linear-gradient(135deg, #1a1a1a, #333333);
   @apply text-white font-semibold rounded-lg;
-  box-shadow: 0 4px 14px rgba(201, 168, 76, 0.3);
+  box-shadow: 0 4px 14px rgba(212, 168, 83, 0.3);
   transition: all 0.3s ease;
 }
 .glow-btn:hover {
-  box-shadow: 0 6px 24px rgba(201, 168, 76, 0.5);
+  box-shadow: 0 6px 24px rgba(212, 168, 83, 0.5);
   transform: translateY(-2px);
 }
 
@@ -107,7 +107,7 @@ body {
   position: absolute;
   inset: 0;
   opacity: 0.4;
-  background-image: radial-gradient(circle, rgba(30, 58, 95, 0.15) 1px, transparent 1px);
+  background-image: radial-gradient(circle, rgba(212, 168, 83, 0.12) 1px, transparent 1px);
   background-size: 24px 24px;
   pointer-events: none;
 }
@@ -129,14 +129,14 @@ body {
 }
 .btn-outline {
   @apply border-2 font-semibold px-6 py-3 rounded-lg transition-all duration-300;
-  border-color: #1e3a5f;
-  color: #1e3a5f;
+  border-color: #1a1a1a;
+  color: #1a1a1a;
 }
 .btn-outline:hover {
   @apply text-white;
-  background: linear-gradient(135deg, #1e3a5f, #3a6080);
+  background: linear-gradient(135deg, #1a1a1a, #333333);
   border-color: transparent;
-  box-shadow: 0 4px 14px rgba(201, 168, 76, 0.3);
+  box-shadow: 0 4px 14px rgba(212, 168, 83, 0.3);
 }
 
 /* 卡片（兼容旧引用） */
@@ -148,7 +148,7 @@ body {
 .heading-underline {
   @apply h-1 mx-auto mt-4 rounded-full;
   width: 80px;
-  background: linear-gradient(90deg, #1e3a5f, #c9a84c);
+  background: linear-gradient(90deg, #1a1a1a, #d4a853);
 }
 
 /* 页面Banner通用样式 */
@@ -157,5 +157,5 @@ body {
 }
 .page-banner-overlay {
   @apply absolute inset-0;
-  background: linear-gradient(135deg, rgba(10, 21, 38, 0.85) 0%, rgba(21, 32, 51, 0.7) 100%);
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.85) 0%, rgba(13, 13, 13, 0.7) 100%);
 }
