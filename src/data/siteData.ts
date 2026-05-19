@@ -558,6 +558,10 @@ export const initialCases: Case[] = [
     location: '河南省',
     description: '环氧树脂修补砂浆施工应用展示。',
     image: '/images/cases/hyszxbsj-1.jpeg',
+    contentImages: [
+      '/images/cases/hyszxbsj-1.jpeg',
+      '/images/cases/hyszxbsj-2.jpeg',
+    ],
     products: ['环氧树脂修补砂浆'],
     date: '2026-05-19'
   },
