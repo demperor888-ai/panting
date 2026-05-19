@@ -74,6 +74,20 @@ export default function CaseDetailPage({ params }: { params: { id: string } }) {
               <p className="text-dark-600 leading-relaxed">{caseItem.description}</p>
             </div>
 
+            {/* 内容图集 */}
+            {caseItem.contentImages && caseItem.contentImages.length > 0 && (
+              <div className="mb-6">
+                <h3 className="text-lg font-semibold text-dark-800 mb-3">施工图集</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {caseItem.contentImages.map((img, index) => (
+                    <div key={index} className="rounded-lg overflow-hidden bg-dark-100">
+                      <img src={img} alt={`${caseItem.title} - 图${index + 1}`} className="w-full h-64 object-cover" />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
             <div>
               <h3 className="text-lg font-semibold text-dark-800 mb-3">使用产品</h3>
               <div className="flex flex-wrap gap-2">

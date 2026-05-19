@@ -25,6 +25,7 @@ export interface Case {
   location: string;
   description: string;
   image: string;
+  contentImages?: string[];
   products: string[];
   date: string;
 }
@@ -524,6 +525,21 @@ export const initialCases: Case[] = [
     image: '/images/cases/fsgc.jpg',
     products: ['聚合物防水砂浆'],
     date: '2023-10-20'
+  },
+  {
+    id: 'c4',
+    title: '高强聚合物砂浆施工',
+    client: '某建筑工程公司',
+    location: '河南省',
+    description: '高强聚合物砂浆施工现场实拍与工艺展示。',
+    image: '/images/cases/gaoqiangjuhewushajiang-1.jpeg',
+    contentImages: [
+      '/images/cases/gaoqiangjuhewushajiang-1.jpeg',
+      '/images/cases/gaoqiangjuhewushajiang-2.jpeg',
+      '/images/cases/gaoqiangjuhewushajiang-3.jpeg',
+    ],
+    products: ['加强聚合物砂浆'],
+    date: '2026-05-19'
   },
 ];
 
