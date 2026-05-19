@@ -551,6 +551,16 @@ export const initialCases: Case[] = [
     products: ['丙乳砂浆'],
     date: '2026-05-19'
   },
+  {
+    id: 'c6',
+    title: '环氧树脂修补砂浆',
+    client: '某工业厂房',
+    location: '河南省',
+    description: '环氧树脂修补砂浆施工应用展示。',
+    image: '/images/cases/hyszxbsj-1.jpeg',
+    products: ['环氧树脂修补砂浆'],
+    date: '2026-05-19'
+  },
 ];
 
 export const initialBanners: Banner[] = [
