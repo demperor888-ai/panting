@@ -55,13 +55,6 @@ export default function NewsDetailPage({ params }: { params: { id: string } }) {
             </div>
           </div>
 
-          {/* 封面图 */}
-          {news.image && (
-            <div className="relative w-full h-64 md:h-96 overflow-hidden">
-              <img src={news.image} alt={news.title} className="w-full h-full object-cover" />
-            </div>
-          )}
-
           {/* 文章内容 */}
           <div className="p-8">
             <div className="prose prose-lg max-w-none text-dark-600 leading-relaxed">
