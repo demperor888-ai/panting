@@ -642,17 +642,17 @@ export const initialCases: Case[] = [
   },
   {
     id: 'c12',
-    title: '界面处理剂施工',
-    client: '某建筑加固公司',
+    title: '重金属不发火砂浆',
+    client: '某工业厂房',
     location: '河南省',
-    description: '界面处理剂施工现场实拍与工艺展示。',
+    description: '重金属不发火砂浆施工现场实拍与效果展示。',
     image: '/images/cases/zjsbfhsj-1.png',
     contentImages: [
       '/images/cases/zjsbfhsj-1.png',
       '/images/cases/zjsbfhsj-2.jpeg',
       '/images/cases/zjsbfhsj-3.jpeg',
     ],
-    products: ['界面处理剂'],
+    products: ['重金属不发火砂浆'],
     date: '2026-05-20'
   },
 ];
