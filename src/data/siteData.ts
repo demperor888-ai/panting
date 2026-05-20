@@ -669,6 +669,21 @@ export const initialCases: Case[] = [
     ],
     products: ['硅烷浸渍剂'],
     date: '2026-05-20'
+  },  {
+    id: 'c14',
+    title: '环氧树脂粘钢胶',
+    client: '某加固工程公司',
+    location: '河南省',
+    description: '环氧树脂粘钢胶施工应用展示。',
+    image: '/images/cases/hyszzgj-1.jpeg',
+    contentImages: [
+      '/images/cases/hyszzgj-1.jpeg',
+      '/images/cases/hyszzgj-2.jpeg',
+      '/images/cases/hyszzgj-3.jpeg',
+      '/images/cases/hyszzgj-4.jpeg',
+    ],
+    products: ['环氧树脂粘钢胶'],
+    date: '2026-05-20'
   },
 ];
 
