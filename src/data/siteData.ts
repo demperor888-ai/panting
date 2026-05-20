@@ -685,6 +685,22 @@ export const initialCases: Case[] = [
     products: ['环氧树脂粘钢胶'],
     date: '2026-05-20'
   },
+  {
+    id: 'c15',
+    title: 'CPC防碳化涂料',
+    client: '某路桥养护工程公司',
+    location: '河南省',
+    description: 'CPC防碳化涂料施工现场实拍与效果展示。',
+    image: '/images/cases/cpc-1.jpeg',
+    contentImages: [
+      '/images/cases/cpc-1.jpeg',
+      '/images/cases/cpc-2.jpeg',
+      '/images/cases/cpc-3.jpg',
+      '/images/cases/cpc-4.png',
+    ],
+    products: ['CPC防碳化涂料'],
+    date: '2026-05-20'
+  },
 ];
 
 export const initialBanners: Banner[] = [
