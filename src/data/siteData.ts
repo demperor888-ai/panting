@@ -565,6 +565,20 @@ export const initialCases: Case[] = [
     products: ['环氧树脂修补砂浆'],
     date: '2026-05-19'
   },
+  {
+    id: 'c7',
+    title: '界面处理剂施工',
+    client: '某建筑工程公司',
+    location: '河南省',
+    description: '界面处理剂施工现场实拍与工艺展示。',
+    image: '/images/cases/jmclj-1.jpeg',
+    contentImages: [
+      '/images/cases/jmclj-1.jpeg',
+      '/images/cases/jmclj-2.jpeg',
+    ],
+    products: ['界面处理剂'],
+    date: '2026-05-20'
+  },
 ];
 
 export const initialBanners: Banner[] = [
