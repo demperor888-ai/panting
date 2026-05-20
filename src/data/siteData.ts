@@ -701,6 +701,22 @@ export const initialCases: Case[] = [
     products: ['CPC防碳化涂料'],
     date: '2026-05-20'
   },
+  {
+    id: 'c16',
+    title: '混凝土表面增强剂',
+    client: '某结构加固工程公司',
+    location: '河南省',
+    description: '混凝土表面增强剂施工现场实拍与效果展示。',
+    image: '/images/cases/hntbmzqj-1.jpeg',
+    contentImages: [
+      '/images/cases/hntbmzqj-1.jpeg',
+      '/images/cases/hntbmzqj-2.jpeg',
+      '/images/cases/hntbmzqj-3.jpeg',
+      '/images/cases/hntbmzqj-4.jpeg',
+    ],
+    products: ['混凝土表面增强剂'],
+    date: '2026-05-20'
+  },
 ];
 
 export const initialBanners: Banner[] = [
