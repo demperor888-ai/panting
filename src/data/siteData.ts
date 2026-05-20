@@ -625,6 +625,21 @@ export const initialCases: Case[] = [
     products: ['混凝土色差修复剂'],
     date: '2026-05-20'
   },
+  {
+    id: 'c11',
+    title: '混凝土养护剂',
+    client: '某建筑工程公司',
+    location: '河南省',
+    description: '混凝土养护剂施工现场实拍与效果展示。',
+    image: '/images/cases/hntyhj-1.jpeg',
+    contentImages: [
+      '/images/cases/hntyhj-1.jpeg',
+      '/images/cases/hntyhj-2.jpeg',
+      '/images/cases/hntyhj-3.jpeg',
+    ],
+    products: ['混凝土养护剂'],
+    date: '2026-05-20'
+  },
 ];
 
 export const initialBanners: Banner[] = [
