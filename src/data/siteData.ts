@@ -579,6 +579,21 @@ export const initialCases: Case[] = [
     products: ['界面处理剂'],
     date: '2026-05-20'
   },
+  {
+    id: 'c8',
+    title: '高强无收缩灌浆料',
+    client: '某基础设施工程',
+    location: '河南省',
+    description: '高强无收缩灌浆料施工现场实拍与工艺展示。',
+    image: '/images/cases/gqwssgjl-1.jpeg',
+    contentImages: [
+      '/images/cases/gqwssgjl-1.jpeg',
+      '/images/cases/gqwssgjl-2.jpeg',
+      '/images/cases/gqwssgjl-3.jpeg',
+    ],
+    products: ['高强度无收缩灌浆料'],
+    date: '2026-05-20'
+  },
 ];
 
 export const initialBanners: Banner[] = [
