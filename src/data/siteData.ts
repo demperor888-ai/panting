@@ -594,6 +594,21 @@ export const initialCases: Case[] = [
     products: ['高强度无收缩灌浆料'],
     date: '2026-05-20'
   },
+  {
+    id: 'c9',
+    title: '聚合物改性防水涂料',
+    client: '某防水工程公司',
+    location: '河南省',
+    description: '聚合物改性防水涂料施工现场实拍与工艺展示。',
+    image: '/images/cases/jhwfstl-1.jpeg',
+    contentImages: [
+      '/images/cases/jhwfstl-1.jpeg',
+      '/images/cases/jhwfstl-2.jpeg',
+      '/images/cases/jhwfstl-3.jpeg',
+    ],
+    products: ['聚合物改性防水涂料'],
+    date: '2026-05-20'
+  },
 ];
 
 export const initialBanners: Banner[] = [
