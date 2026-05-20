@@ -655,6 +655,21 @@ export const initialCases: Case[] = [
     products: ['重金属不发火砂浆'],
     date: '2026-05-20'
   },
+  {
+    id: 'c13',
+    title: '硅烷浸渍剂',
+    client: '某路桥养护公司',
+    location: '河南省',
+    description: '硅烷浸渍剂施工现场实拍与效果展示。',
+    image: '/images/cases/gwjzj-1.jpeg',
+    contentImages: [
+      '/images/cases/gwjzj-1.jpeg',
+      '/images/cases/gwjzj-2.jpeg',
+      '/images/cases/gwjzj-3.jpeg',
+    ],
+    products: ['硅烷浸渍剂'],
+    date: '2026-05-20'
+  },
 ];
 
 export const initialBanners: Banner[] = [
