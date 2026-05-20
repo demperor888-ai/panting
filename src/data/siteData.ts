@@ -609,6 +609,22 @@ export const initialCases: Case[] = [
     products: ['聚合物改性防水涂料'],
     date: '2026-05-20'
   },
+  {
+    id: 'c10',
+    title: '混凝土色差修复剂',
+    client: '某市政工程公司',
+    location: '河南省',
+    description: '混凝土色差修复剂施工现场实拍与效果展示。',
+    image: '/images/cases/hntscxfj-1.jpeg',
+    contentImages: [
+      '/images/cases/hntscxfj-1.jpeg',
+      '/images/cases/hntscxfj-2.jpeg',
+      '/images/cases/hntscxfj-3.jpeg',
+      '/images/cases/hntscxfj-4.jpeg',
+    ],
+    products: ['混凝土色差修复剂'],
+    date: '2026-05-20'
+  },
 ];
 
 export const initialBanners: Banner[] = [
