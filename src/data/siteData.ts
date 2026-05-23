@@ -717,6 +717,22 @@ export const initialCases: Case[] = [
     products: ['混凝土表面增强剂'],
     date: '2026-05-20'
   },
+  {
+    id: 'c17',
+    title: '环氧树脂植筋胶',
+    client: '某加固工程公司',
+    location: '河南省',
+    description: '环氧树脂植筋胶施工现场实拍与工艺展示。',
+    image: '/images/cases/hyszzjj-1.jpg',
+    contentImages: [
+      '/images/cases/hyszzjj-1.jpg',
+      '/images/cases/hyszzjj-2.jpg',
+      '/images/cases/hyszzjj-3.jpeg',
+      '/images/cases/hyszzjj-4.jpeg',
+    ],
+    products: ['环氧树脂植筋胶'],
+    date: '2026-05-20'
+  },
 ];
 
 export const initialBanners: Banner[] = [
