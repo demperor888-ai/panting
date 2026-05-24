@@ -101,7 +101,7 @@ export const initialProducts: Product[] = [
     name: '丙乳砂浆',
     category: 'shajiang',
     description: '丙乳砂浆是一种新型混凝土建筑物修补材料，属于高分子聚合物乳液改性水泥砂浆，具有优异的粘结、抗裂、防水、防氯离子渗透、耐磨、耐老化等性能，成本低、施工工艺简单。',
-    image: '/images/products/brsj.jpg',
+    image: '/images/products/products-brsj.jpg',
     features: ['粘结力强', '抗裂性好', '防水防渗', '耐老化', '施工简便']
   },
   {
@@ -109,7 +109,7 @@ export const initialProducts: Product[] = [
     name: '重金属不发火砂浆',
     category: 'shajiang',
     description: '重金属不发火砂浆是一种功能性防爆砂浆，在受到冲击、摩擦或撞击时不产生火花，具有不燃、防爆、高耐磨、高强度、耐久性等特性，适用于易燃易爆场所。',
-    image: '/images/products/brsj.jpg',
+    image: '/images/products/products-2.jpg',
     features: ['不燃不爆', '高耐磨性', '高强度耐久', '环保安全', '施工方便']
   },
   {
