@@ -101,7 +101,7 @@ export const initialProducts: Product[] = [
     name: '丙乳砂浆',
     category: 'shajiang',
     description: '丙乳砂浆是一种新型混凝土建筑物修补材料，属于高分子聚合物乳液改性水泥砂浆，具有优异的粘结、抗裂、防水、防氯离子渗透、耐磨、耐老化等性能，成本低、施工工艺简单。',
-    image: '/images/products/products-2.jpg',
+    image: '/images/products/brsj.jpg',
     features: ['粘结力强', '抗裂性好', '防水防渗', '耐老化', '施工简便']
   },
   {
