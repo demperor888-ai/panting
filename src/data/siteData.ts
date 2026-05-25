@@ -400,6 +400,22 @@ export const initialProducts: Product[] = [
     image: '/images/products/products-2.jpg',
     features: ['深层渗透', '憎水防护', '抗氯离子', '耐久性好']
   },
+  {
+    id: 'p51',
+    name: 'CPC防碳化涂料',
+    category: 'fangshui',
+    description: '混凝土CPC防碳化涂料是一种高性能防护材料，能有效阻止二氧化碳、水分和氯离子侵入混凝土，防止混凝土碳化、钢筋锈蚀，延长结构使用寿命。',
+    image: '/images/products/cpcfthtl.jpg',
+    features: ['防碳化', '抗渗防腐', '耐久防护', '施工便捷']
+  },
+  {
+    id: 'p52',
+    name: '混凝土色差修复剂',
+    category: 'fangshui',
+    description: '混凝土色差修复剂是一种专用表面处理材料，能有效修复混凝土色差、瑕疵，恢复表面均匀美观，同时提供防护功能，适用于各类混凝土结构表面美化。',
+    image: '/images/products/hntscxfj.jpg',
+    features: ['修复色差', '表面美化', '防护耐久', '施工简便']
+  },
 ];
 
 export const initialNews: News[] = [
