@@ -269,7 +269,7 @@ export const initialProducts: Product[] = [
     name: '混凝土防腐剂',
     category: 'fangshui',
     description: '专用于防止混凝土中钢筋腐蚀的化学材料，能有效提高混凝土结构耐久性和安全性，抑制钢筋腐蚀、提高密实度和抗渗性。',
-    image: '/images/products/products-2.jpg',
+    image: '/images/products/hntffj.jpg',
     features: ['防腐阻锈', '提高密实度', '抗渗性好', '延长寿命']
   },
   {
@@ -277,7 +277,7 @@ export const initialProducts: Product[] = [
     name: '钢筋阻锈剂',
     category: 'fangshui',
     description: '专用于防止钢筋混凝土中钢筋锈蚀的化学材料，通过抑制钢筋腐蚀的电化学过程延长结构使用寿命，直接涂刷于钢筋起到钝化防腐作用。',
-    image: '/images/products/products-2.jpg',
+    image: '/images/products/hntgjzxj.jpg',
     features: ['钝化钢筋', '阻止腐蚀', '涂刷方便', '耐久可靠']
   },
   {
@@ -285,7 +285,7 @@ export const initialProducts: Product[] = [
     name: '透水砼胶结剂',
     category: 'fangshui',
     description: '一种用于改善透水性铺装产品集料间粘结性能、提高产品强度的综合胶凝材料，适用于人行道、自行车道、公园绿地等透水混凝土施工场合。',
-    image: '/images/products/products-2.jpg',
+    image: '/images/products/tsgjjj.jpg',
     features: ['高透水性', '抗压粘结强', '抗冻融', '耐久耐候']
   },
   {
@@ -293,7 +293,7 @@ export const initialProducts: Product[] = [
     name: '混凝土养护剂',
     category: 'fangshui',
     description: '液体成膜养护产品，喷涂于混凝土或砂浆表面后迅速形成无色不透水薄膜，防止水分蒸发，减缓混凝土收缩和开裂。',
-    image: '/images/products/products-2.jpg',
+    image: '/images/products/hntyhj.jpg',
     features: ['成膜快', '保水养护', '防开裂', '使用方便']
   },
   {
@@ -346,34 +346,34 @@ export const initialProducts: Product[] = [
   },
   {
     id: 'p46',
-    name: '环氧植筋胶',
+    name: '环氧树脂植筋胶',
     category: 'tezhong',
     description: '双组分环氧树脂结构胶，用于混凝土结构植筋加固，具有极高的粘结强度和耐腐蚀性能。',
-    image: '/images/products/products-2.jpg',
+    image: '/images/products/hyszzjj.jpg',
     features: ['粘结力强', '耐腐蚀', '耐久性好', '强度高']
   },
   {
     id: 'p47',
-    name: '环氧封缝胶',
+    name: '环氧树脂封缝胶',
     category: 'tezhong',
     description: '环氧树脂基裂缝封闭材料，用于混凝土表面裂缝的封闭处理，防止水分和有害物质渗入。',
-    image: '/images/products/products-2.jpg',
+    image: '/images/products/hyszffj.jpg',
     features: ['封闭性好', '附着力强', '耐候耐久', '施工简便']
   },
   {
     id: 'p48',
-    name: '环氧灌缝胶',
+    name: '环氧树脂灌缝胶',
     category: 'tezhong',
     description: '低粘度环氧树脂灌缝材料，具有优异的渗透性，可深入混凝土细微裂缝进行灌注修复。',
-    image: '/images/products/products-2.jpg',
+    image: '/images/products/hyszgfj.jpg',
     features: ['低粘度', '渗透性强', '强度高', '固化稳定']
   },
   {
     id: 'p49',
-    name: '环氧粘钢胶',
+    name: '环氧树脂粘钢胶',
     category: 'tezhong',
     description: '环氧树脂基粘钢专用结构胶，用于将钢板粘贴到混凝土表面进行结构补强，具有高强度和高耐久性。',
-    image: '/images/products/products-2.jpg',
+    image: '/images/products/hyszzgj.jpg',
     features: ['高强度', '粘结牢固', '耐老化', '施工性好']
   },
   {
@@ -381,7 +381,7 @@ export const initialProducts: Product[] = [
     name: '硅烷浸渍剂',
     category: 'fangshui',
     description: '以硅烷为主要成分的混凝土防护浸渍材料，能深层渗透混凝土内部形成憎水层，有效阻止水分和氯离子侵入，提高混凝土耐久性。',
-    image: '/images/products/products-2.jpg',
+    image: '/images/products/gwjzj.jpg',
     features: ['深层渗透', '憎水防护', '抗氯离子', '耐久性好']
   },
   {
@@ -399,6 +399,46 @@ export const initialProducts: Product[] = [
     description: '混凝土色差修复剂是一种专用表面处理材料，能有效修复混凝土色差、瑕疵，恢复表面均匀美观，同时提供防护功能，适用于各类混凝土结构表面美化。',
     image: '/images/products/hntscxfj.jpg',
     features: ['修复色差', '表面美化', '防护耐久', '施工简便']
+  },
+  {
+    id: 'p53',
+    name: '水泥基渗透结晶防水涂料',
+    category: 'fangshui',
+    description: '以特种水泥、石英砂为基料，掺入多种活性化学物质制成的无机防水材料。其活性组分借助水分渗透进入混凝土内部，与水泥水化产物反应生成不溶于水的针状晶体，密实混凝土毛细孔道，实现永久性防水抗渗。',
+    image: '/images/products/snjstjjfstl.jpg',
+    features: ['渗透结晶', '自修复性', '永久防水', '环保无毒', '施工简便']
+  },
+  {
+    id: 'p54',
+    name: '界面处理剂',
+    category: 'shajiang',
+    description: '由高分子聚合物与特种水泥等材料复合制成的环保型界面粘结材料。通过双向亲和性机理，增强新旧混凝土、保温板、加气砌块等基材间的粘结性能，替代传统凿毛工艺，有效防止空鼓脱落。',
+    image: '/images/products/jmclj.jpg',
+    features: ['双向亲和', '粘结牢固', '防空鼓脱落', '施工便捷', '环保无毒']
+  },
+  {
+    id: 'p55',
+    name: '聚合物改性防水涂料',
+    category: 'fangshui',
+    description: '以高分子聚合物乳液与水泥、石英砂等无机粉料复合而成的双组分水性防水涂料。兼具聚合物涂膜的高弹性、高延伸率以及水泥基材料的耐久性和耐水性，适用于建筑屋面、地下室、卫浴间等防水工程。',
+    image: '/images/products/jhwgxfstl.jpg',
+    features: ['弹性涂膜', '粘结力强', '耐水性好', '耐久耐候', '环保无毒']
+  },
+  {
+    id: 'p56',
+    name: '混凝土表面增强剂',
+    category: 'fangshui',
+    description: '高性能混凝土表面渗透增强材料，通过深层渗透与混凝土中游离钙离子反应，生成致密结晶物质填充毛细孔隙，显著提高混凝土表面硬度、强度和耐磨性，有效防止起砂起灰。',
+    image: '/images/products/hntbmzqj.jpg',
+    features: ['渗透增强', '提高硬度', '耐磨防尘', '施工简单', '耐久性好']
+  },
+  {
+    id: 'p57',
+    name: '高性能砂浆系列',
+    category: 'shajiang',
+    description: '采用优质水泥、精选级配骨料及多种高分子改性剂配制而成的系列高性能预拌砂浆，涵盖修补、加固、找平、防水等多功能产品，具有高强度、高粘结力和优异的施工性能，满足各类工程需求。',
+    image: '/images/products/gxnsjxl.jpg',
+    features: ['高强度', '粘结力强', '收缩率低', '施工优异', '耐久可靠']
   },
 ];
 
