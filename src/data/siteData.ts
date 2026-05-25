@@ -408,6 +408,14 @@ export const initialProducts: Product[] = [
     image: '/images/products/cpcfthtl.jpg',
     features: ['防碳化', '抗渗防腐', '耐久防护', '施工便捷']
   },
+  {
+    id: 'p52',
+    name: '混凝土色差修复剂',
+    category: 'fangshui',
+    description: '混凝土色差修复剂是一种专用表面处理材料，能有效修复混凝土色差、瑕疵，恢复表面均匀美观，同时提供防护功能，适用于各类混凝土结构表面美化。',
+    image: '/images/products/hntscxfj.jpg',
+    features: ['修复色差', '表面美化', '防护耐久', '施工简便']
+  },
 ];
 
 export const initialNews: News[] = [
