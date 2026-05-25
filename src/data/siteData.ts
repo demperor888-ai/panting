@@ -112,23 +112,6 @@ export const initialProducts: Product[] = [
     image: '/images/products/products-2.jpg',
     features: ['不燃不爆', '高耐磨性', '高强度耐久', '环保安全', '施工方便']
   },
-  {
-    id: 'p10',
-    name: '混凝土CPC防碳化涂料',
-    category: 'fangshui',
-    description: '高性能液体聚合物-水泥复合防碳化材料，含有独特组分与水泥水化产物反应，形成聚合物-水泥互穿网络结构，有效防止混凝土碳化。',
-    image: '/images/products/products-2.jpg',
-    features: ['防碳化', '渗透性强', '粘结牢固', '耐候性好']
-  },
-  {
-    id: 'p11',
-    name: '混凝土色差修复剂',
-    category: 'fangshui',
-    description: '用于修补各类混凝土表面，包括路面、桥面、机场跑道等，解决起砂、开裂等表面问题，可定制多种颜色。',
-    image: '/images/products/products-2.jpg',
-    features: ['修复色差', '颜色可定制', '附着力强', '耐久性好']
-  },
-  {
     id: 'p13',
     name: '重载耐磨地面砂浆',
     category: 'shajiang',
