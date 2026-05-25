@@ -112,6 +112,7 @@ export const initialProducts: Product[] = [
     image: '/images/products/products-2.jpg',
     features: ['不燃不爆', '高耐磨性', '高强度耐久', '环保安全', '施工方便']
   },
+  {
     id: 'p13',
     name: '重载耐磨地面砂浆',
     category: 'shajiang',
