@@ -400,6 +400,14 @@ export const initialProducts: Product[] = [
     image: '/images/products/products-2.jpg',
     features: ['深层渗透', '憎水防护', '抗氯离子', '耐久性好']
   },
+  {
+    id: 'p51',
+    name: 'CPC防碳化涂料',
+    category: 'fangshui',
+    description: '混凝土CPC防碳化涂料是一种高性能防护材料，能有效阻止二氧化碳、水分和氯离子侵入混凝土，防止混凝土碳化、钢筋锈蚀，延长结构使用寿命。',
+    image: '/images/products/cpcfthtl.jpg',
+    features: ['防碳化', '抗渗防腐', '耐久防护', '施工便捷']
+  },
 ];
 
 export const initialNews: News[] = [
