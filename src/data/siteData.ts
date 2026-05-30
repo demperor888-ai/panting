@@ -106,9 +106,9 @@ export const initialProducts: Product[] = [
   },
   {
     id: 'p9',
-    name: '重金属不发火砂浆',
+    name: '防静电不发火砂浆',
     category: 'shajiang',
-    description: '重金属不发火砂浆是一种功能性防爆砂浆，在受到冲击、摩擦或撞击时不产生火花，具有不燃、防爆、高耐磨、高强度、耐久性等特性，适用于易燃易爆场所。',
+    description: '防静电不发火砂浆是一种功能性防爆砂浆，在受到冲击、摩擦或撞击时不产生火花，具有不燃、防爆、高耐磨、高强度、耐久性等特性，适用于易燃易爆场所。',
     image: '/images/products/products-2.jpg',
     features: ['不燃不爆', '高耐磨性', '高强度耐久', '环保安全', '施工方便']
   },
