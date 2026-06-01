@@ -1,25 +1,6 @@
-'use client';
-
-import { useState } from 'react';
 import { siteConfig } from '@/data/siteData';
 
 export default function ContactPage() {
-  const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    email: '',
-    company: '',
-    message: ''
-  });
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 5000);
-  };
-
   return (
     <div className="min-h-screen">
       {/* 顶部Banner */}
@@ -32,7 +13,7 @@ export default function ContactPage() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 py-12">
-        <div className="grid lg:grid-cols-2 gap-8">
+        <div className="max-w-3xl mx-auto">
           {/* 联系信息 */}
           <div className="glass-card p-8">
             <h2 className="text-2xl font-bold text-dark-800 mb-6">联系方式</h2>
@@ -80,96 +61,6 @@ export default function ContactPage() {
               <p className="text-xs text-dark-400 mt-1 text-center">河南省郑州市高新技术产业开发区</p>
               <p className="text-xs text-primary-500 mt-0.5 text-center group-hover:underline">点击查看导航 →</p>
             </a>
-          </div>
-
-          {/* 在线留言 */}
-          <div className="glass-card p-8">
-            <h2 className="text-2xl font-bold text-dark-800 mb-6">在线留言</h2>
-
-            {submitted ? (
-              <div className="h-full flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-6xl mb-4">✅</div>
-                  <h3 className="text-xl font-semibold text-dark-800 mb-2">提交成功！</h3>
-                  <p className="text-dark-500">我们会尽快与您联系，感谢您的关注！</p>
-                </div>
-              </div>
-            ) : (
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-medium text-dark-600 mb-1">
-                      姓名 <span className="text-red-500">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      required
-                      value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full px-4 py-2.5 bg-dark-50 border border-dark-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all duration-200 text-dark-700 placeholder:text-dark-400"
-                      placeholder="请输入您的姓名"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-dark-600 mb-1">
-                      电话 <span className="text-red-500">*</span>
-                    </label>
-                    <input
-                      type="tel"
-                      required
-                      value={formData.phone}
-                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      className="w-full px-4 py-2.5 bg-dark-50 border border-dark-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all duration-200 text-dark-700 placeholder:text-dark-400"
-                      placeholder="请输入您的电话"
-                    />
-                  </div>
-                </div>
-
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-medium text-dark-600 mb-1">邮箱</label>
-                    <input
-                      type="email"
-                      value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full px-4 py-2.5 bg-dark-50 border border-dark-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all duration-200 text-dark-700 placeholder:text-dark-400"
-                      placeholder="请输入您的邮箱"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-dark-600 mb-1">公司</label>
-                    <input
-                      type="text"
-                      value={formData.company}
-                      onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                      className="w-full px-4 py-2.5 bg-dark-50 border border-dark-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all duration-200 text-dark-700 placeholder:text-dark-400"
-                      placeholder="请输入您的公司"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-dark-600 mb-1">
-                    留言内容 <span className="text-red-500">*</span>
-                  </label>
-                  <textarea
-                    required
-                    rows={5}
-                    value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    className="w-full px-4 py-2.5 bg-dark-50 border border-dark-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all duration-200 resize-none text-dark-700 placeholder:text-dark-400"
-                    placeholder="请输入您的留言内容..."
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full glow-btn py-3 rounded-lg font-semibold"
-                >
-                  提交留言
-                </button>
-              </form>
-            )}
           </div>
         </div>
       </div>
