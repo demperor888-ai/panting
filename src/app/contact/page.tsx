@@ -60,7 +60,7 @@ export default function ContactPage() {
                 height="300"
                 className="rounded-xl border-0"
                 loading="lazy"
-                src="https://www.openstreetmap.org/export/embed.html?bbox=113.56,34.70,113.68,34.80&layer=mapnik&marker=34.7496,113.6201"
+                src="/map.html"
               />
               <p className="text-xs text-dark-400 mt-1 text-center">河南省郑州市高新技术产业开发区</p>
             </div>
