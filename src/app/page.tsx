@@ -19,14 +19,15 @@ export default function HomePage() {
       <section className="py-20 section-dot-pattern">
         <div className="relative max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
+            <span className="section-kicker">ABOUT PANTING</span>
             <h2 className="text-3xl font-bold text-dark-800">
               关于{siteConfig.shortName}
             </h2>
             <div className="heading-underline" />
           </div>
-          <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="grid md:grid-cols-[1.05fr_0.95fr] gap-8 items-center">
             <div>
-              <p className="text-dark-600 leading-relaxed mb-6">
+              <p className="text-dark-600 leading-relaxed mb-6 text-lg">
                 {siteConfig.name}是一家专注于新型建筑材料研发、生产、销售的高新技术企业。
                 公司主营产品包括灌浆料系列、建筑砂浆系列、特种结构系列、防水堵漏系列、
                 装配式墙面砂浆系列等，广泛应用于工业厂房、桥梁隧道、民用建筑等领域。
@@ -41,19 +42,19 @@ export default function HomePage() {
               </Link>
             </div>
             <div className="grid grid-cols-2 gap-4">
-              <div className="glass-card p-6 text-center">
+              <div className="metric-card text-center">
                 <div className="text-4xl font-bold gradient-text mb-2">10+</div>
                 <div className="text-dark-500 font-medium">年行业经验</div>
               </div>
-              <div className="glass-card p-6 text-center">
+              <div className="metric-card text-center">
                 <div className="text-4xl font-bold gradient-text mb-2">50+</div>
                 <div className="text-dark-500 font-medium">产品种类</div>
               </div>
-              <div className="glass-card p-6 text-center">
+              <div className="metric-card text-center">
                 <div className="text-4xl font-bold gradient-text mb-2">500+</div>
                 <div className="text-dark-500 font-medium">服务客户</div>
               </div>
-              <div className="glass-card p-6 text-center">
+              <div className="metric-card text-center">
                 <div className="text-4xl font-bold gradient-text mb-2">100%</div>
                 <div className="text-dark-500 font-medium">质量保障</div>
               </div>
@@ -63,12 +64,13 @@ export default function HomePage() {
       </section>
 
       {/* 产品展示 */}
-      <section className="py-20 section-dot-pattern">
+      <section className="dark-tech-band py-20">
         <div className="relative max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-dark-800">产品中心</h2>
+            <span className="section-kicker border-cyan-300/25 bg-white/10 text-cyan-100">PRODUCT SYSTEM</span>
+            <h2 className="text-3xl font-bold text-white mt-4">产品中心</h2>
             <div className="heading-underline" />
-            <p className="text-dark-400 mt-4">专注新型建筑材料研发与生产</p>
+            <p className="text-cyan-50/70 mt-4">围绕加固、修复、防护、连接四类工程场景构建材料方案</p>
           </div>
 
           <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -76,7 +78,7 @@ export default function HomePage() {
               <Link
                 key={cat.id}
                 href={`/products#${cat.id}`}
-                className="px-5 py-2.5 border border-primary-300 text-primary-600 rounded-full font-medium hover:bg-primary-600 hover:text-white hover:border-primary-600 transition-all duration-300 hover:shadow-glow"
+                className="rounded-lg border border-cyan-200/20 bg-white/10 px-5 py-2.5 font-medium text-cyan-50 backdrop-blur-md transition-all duration-300 hover:border-teal-200/50 hover:bg-white/20 hover:shadow-[0_0_28px_rgba(18,199,181,0.16)]"
               >
                 {cat.name}
               </Link>
@@ -90,7 +92,7 @@ export default function HomePage() {
           </div>
 
           <div className="text-center mt-8">
-            <Link href="/products" className="btn-outline">
+            <Link href="/products" className="inline-flex rounded-lg border border-cyan-200/30 bg-white/10 px-6 py-3 font-semibold text-white transition hover:bg-white/20">
               查看全部产品
             </Link>
           </div>
@@ -101,6 +103,7 @@ export default function HomePage() {
       <section className="py-20 section-dot-pattern">
         <div className="relative max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
+            <span className="section-kicker">NEWSROOM</span>
             <h2 className="text-3xl font-bold text-dark-800">新闻资讯</h2>
             <div className="heading-underline" />
           </div>
@@ -123,6 +126,7 @@ export default function HomePage() {
       <section className="py-20 section-dot-pattern">
         <div className="relative max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
+            <span className="section-kicker">PROJECT CASES</span>
             <h2 className="text-3xl font-bold text-dark-800">成功案例</h2>
             <div className="heading-underline" />
           </div>
@@ -142,12 +146,10 @@ export default function HomePage() {
       </section>
 
       {/* 联系我们 CTA */}
-      <section className="relative py-28 overflow-hidden" style={{ backgroundImage: `url('/images/banners/xybz.jpg')` }}>
+      <section className="dark-tech-band relative py-28 overflow-hidden" style={{ backgroundImage: `url('/images/banners/xybz.jpg')` }}>
         {/* 科技渐变遮罩 */}
-        <div className="absolute inset-0 bg-gradient-to-r from-dark-900/90 via-dark-900/70 to-dark-900/50" />
-        {/* 光效装饰 */}
-        <div className="absolute top-0 right-0 w-96 h-96 bg-primary-500/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 left-1/4 w-64 h-64 bg-accent-500/10 rounded-full blur-3xl" />
+        <div className="absolute inset-0 bg-gradient-to-r from-dark-950/95 via-primary-900/80 to-dark-900/70" />
+        <div className="scan-line" />
         <div className="relative max-w-7xl mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">需要我们的帮助？</h2>
           <p className="text-blue-100/80 mb-8 max-w-2xl mx-auto text-lg">

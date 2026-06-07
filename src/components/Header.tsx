@@ -27,20 +27,22 @@ export default function Header() {
     <header
       className={`sticky top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-white/80 backdrop-blur-xl shadow-glass border-b border-white/40'
-          : 'bg-white/60 backdrop-blur-lg border-b border-transparent'
+          ? 'bg-white/90 backdrop-blur-xl shadow-glass border-b border-cyan-900/10'
+          : 'bg-white/70 backdrop-blur-lg border-b border-white/40'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3 group">
-            <div className="w-10 h-10 rounded-lg flex items-center justify-center bg-gradient-tech shadow-glow transition-shadow duration-300 group-hover:shadow-glow-lg">
+            <div className="relative w-10 h-10 rounded-lg flex items-center justify-center bg-gradient-tech shadow-glow transition-shadow duration-300 group-hover:shadow-glow-lg overflow-hidden">
+              <span className="absolute inset-x-1 top-1 h-px bg-cyan-200/70" />
+              <span className="absolute bottom-1 right-1 w-2 h-2 border-r border-b border-cyan-200/70" />
               <span className="text-white font-bold text-sm tracking-tight">PTSK</span>
             </div>
             <div>
-              <h1 className="text-lg font-bold text-dark-800">{siteConfig.shortName}</h1>
-              <p className="text-xs text-dark-400">新型建筑材料</p>
+              <h1 className="text-lg font-bold text-dark-800 leading-tight">{siteConfig.shortName}</h1>
+              <p className="text-xs text-primary-600 font-medium">Advanced Materials</p>
             </div>
           </Link>
 
@@ -50,13 +52,21 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="relative px-4 py-2 text-dark-600 hover:text-primary-600 transition-colors duration-200 font-medium text-sm group"
+                className="relative px-4 py-2 text-dark-600 hover:text-primary-700 transition-colors duration-200 font-medium text-sm group"
               >
                 {item.name}
-                <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-tech rounded-full transition-all duration-300 group-hover:w-3/4" />
+                <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-cyan-400 via-teal-400 to-amber-300 rounded-full transition-all duration-300 group-hover:w-3/4" />
               </Link>
             ))}
           </nav>
+
+          <a
+            href={`tel:${siteConfig.phone}`}
+            className="hidden lg:inline-flex items-center gap-2 rounded-lg border border-cyan-900/10 bg-dark-900 px-4 py-2 text-sm font-semibold text-white shadow-[0_12px_28px_rgba(6,17,31,0.18)] transition hover:bg-primary-800 hover:shadow-[0_14px_34px_rgba(18,199,181,0.22)]"
+          >
+            <span className="h-2 w-2 rounded-full bg-teal-300 shadow-[0_0_12px_rgba(45,212,191,0.9)]" />
+            技术咨询
+          </a>
 
           {/* Mobile Menu Button */}
           <button

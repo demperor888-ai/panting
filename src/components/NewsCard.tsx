@@ -37,7 +37,7 @@ export default function NewsCard({ news, compact }: NewsCardProps) {
         : 'bg-gradient-to-r from-violet-500/10 to-purple-600/10 text-purple-700 border-purple-200/50';
 
   return (
-    <Link href={`/news/${news.id}`} className="glass-card group block overflow-hidden">
+    <Link href={`/news/${news.id}`} className="tech-panel group block overflow-hidden">
       {/* 图片区 + 渐变遮罩 */}
       <div className="h-40 bg-dark-100 flex items-center justify-center overflow-hidden relative">
         <img
@@ -47,8 +47,8 @@ export default function NewsCard({ news, compact }: NewsCardProps) {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-dark-900/30 via-transparent to-transparent" />
       </div>
-      <div className="p-5">
-        <span className={`text-xs px-2 py-1 rounded-full border font-medium ${categoryStyle}`}>
+      <div className="relative z-10 p-5">
+        <span className={`text-xs px-2 py-1 rounded-md border font-medium ${categoryStyle}`}>
           {news.category}
         </span>
         <h3 className="text-lg font-semibold text-dark-800 mt-2 group-hover:text-primary-600 transition-colors duration-200 line-clamp-2">
@@ -57,7 +57,7 @@ export default function NewsCard({ news, compact }: NewsCardProps) {
         <p className="text-sm text-dark-500 mt-2 line-clamp-2">{news.summary}</p>
         <div className="flex items-center justify-between mt-3 text-xs text-dark-400">
           <span>{news.date}</span>
-          <span>{news.views} 阅读</span>
+          <span>{news.views} views</span>
         </div>
       </div>
     </Link>
