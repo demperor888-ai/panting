@@ -82,7 +82,7 @@ export default function Banner({ banners }: BannerProps) {
             </Link>
             <Link
               href="/cases"
-              className="inline-flex items-center gap-2 rounded-lg border border-white/20 bg-white/10 px-8 py-3.5 font-semibold text-white backdrop-blur-md transition hover:border-cyan-200/50 hover:bg-white/20"
+              className="inline-flex items-center gap-2 rounded-lg border border-white/20 bg-white/10 px-8 py-3.5 font-semibold text-white transition hover:border-cyan-200/50 hover:bg-white/20"
             >
               工程案例
             </Link>
@@ -93,7 +93,7 @@ export default function Banner({ banners }: BannerProps) {
               ['500+', '工程客户'],
               ['24h', '响应支持'],
             ].map(([value, label]) => (
-              <div key={label} className="rounded-lg border border-white/10 bg-white/10 px-4 py-3 backdrop-blur-md">
+              <div key={label} className="rounded-lg border border-white/10 bg-white/10 px-4 py-3">
                 <div className="text-2xl font-bold text-white">{value}</div>
                 <div className="mt-1 text-xs text-cyan-100/70">{label}</div>
               </div>
@@ -102,7 +102,7 @@ export default function Banner({ banners }: BannerProps) {
         </div>
 
         <div className="relative hidden lg:block">
-          <div className="tech-panel bg-white/10 p-6 text-white backdrop-blur-md">
+          <div className="tech-panel bg-white/15 p-6 text-white">
             <div className="relative z-10">
               <div className="mb-6 flex items-center justify-between border-b border-white/10 pb-4">
                 <div>
