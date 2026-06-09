@@ -16,25 +16,25 @@ export default function CaseDetailPage({ params }: { params: { id: string } }) {
   }
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen page-enter">
       {/* 面包屑 */}
       <div className="bg-white/60 backdrop-blur-lg border-b border-cyan-900/8">
         <div className="max-w-7xl mx-auto px-4 py-4">
-          <div className="flex items-center text-sm text-dark-400">
-            <Link href="/" className="hover:text-primary-600 transition-colors">首页</Link>
+          <div className="flex items-center text-sm text-surface-400">
+            <Link href="/" className="hover:text-brand-600 transition-colors">首页</Link>
             <span className="mx-2">/</span>
-            <Link href="/cases" className="hover:text-primary-600 transition-colors">成功案例</Link>
+            <Link href="/cases" className="hover:text-brand-600 transition-colors">成功案例</Link>
             <span className="mx-2">/</span>
-            <span className="text-dark-700 truncate max-w-xs">{caseItem.title}</span>
+            <span className="text-surface-700 truncate max-w-xs">{caseItem.title}</span>
           </div>
         </div>
       </div>
 
       <div className="max-w-4xl mx-auto px-4 py-12">
-        <div className="tech-panel overflow-hidden">
+        <div className="tech-panel overflow-hidden card-border-glow">
           <div className="relative z-10">
             {/* 案例图片 */}
-            <div className="h-80 bg-dark-100 flex items-center justify-center overflow-hidden">
+            <div className="h-80 bg-surface-100 flex items-center justify-center overflow-hidden transition-transform duration-300 hover:scale-[1.02]">
               <img
                 src={caseItem.image}
                 alt={caseItem.title}
@@ -45,44 +45,44 @@ export default function CaseDetailPage({ params }: { params: { id: string } }) {
             {/* 案例信息 */}
             <div className="p-8">
               <span className="section-kicker">PROJECT DETAIL</span>
-              <h1 className="text-3xl font-bold text-dark-800 mt-2 mb-6">{caseItem.title}</h1>
+              <h1 className="text-3xl font-bold text-surface-800 mt-2 mb-6">{caseItem.title}</h1>
 
               <div className="grid md:grid-cols-2 gap-6 mb-6">
-                <div className="flex items-center gap-3 rounded-xl border border-dark-200 bg-gradient-to-br from-dark-50 to-white p-4">
+                <div className="flex items-center gap-3 rounded-xl border border-surface-200 bg-gradient-to-br from-surface-50 to-white p-4 transition-all duration-300 hover:shadow-glow hover:-translate-y-0.5">
                   <span className="text-2xl">👤</span>
                   <div>
-                    <p className="text-sm text-dark-400">客户名称</p>
-                    <p className="font-semibold text-dark-700">{caseItem.client}</p>
+                    <p className="text-sm text-surface-400">客户名称</p>
+                    <p className="font-semibold text-surface-700">{caseItem.client}</p>
                   </div>
                 </div>
-                <div className="flex items-center gap-3 rounded-xl border border-dark-200 bg-gradient-to-br from-dark-50 to-white p-4">
+                <div className="flex items-center gap-3 rounded-xl border border-surface-200 bg-gradient-to-br from-surface-50 to-white p-4 transition-all duration-300 hover:shadow-glow hover:-translate-y-0.5">
                   <span className="text-2xl">📍</span>
                   <div>
-                    <p className="text-sm text-dark-400">项目地点</p>
-                    <p className="font-semibold text-dark-700">{caseItem.location}</p>
+                    <p className="text-sm text-surface-400">项目地点</p>
+                    <p className="font-semibold text-surface-700">{caseItem.location}</p>
                   </div>
                 </div>
-                <div className="flex items-center gap-3 rounded-xl border border-dark-200 bg-gradient-to-br from-dark-50 to-white p-4">
+                <div className="flex items-center gap-3 rounded-xl border border-surface-200 bg-gradient-to-br from-surface-50 to-white p-4 transition-all duration-300 hover:shadow-glow hover:-translate-y-0.5">
                   <span className="text-2xl">📅</span>
                   <div>
-                    <p className="text-sm text-dark-400">项目时间</p>
-                    <p className="font-semibold text-dark-700">{caseItem.date}</p>
+                    <p className="text-sm text-surface-400">项目时间</p>
+                    <p className="font-semibold text-surface-700">{caseItem.date}</p>
                   </div>
                 </div>
               </div>
 
               <div className="mb-6">
-                <h3 className="text-lg font-semibold text-dark-800 mb-3">项目描述</h3>
-                <p className="text-dark-600 leading-relaxed">{caseItem.description}</p>
+                <h3 className="text-lg font-semibold text-surface-800 mb-3">项目描述</h3>
+                <p className="text-surface-600 leading-relaxed">{caseItem.description}</p>
               </div>
 
               {/* 内容图集 */}
               {caseItem.contentImages && caseItem.contentImages.length > 0 && (
                 <div className="mb-6">
-                  <h3 className="text-lg font-semibold text-dark-800 mb-3">施工图集</h3>
+                  <h3 className="text-lg font-semibold text-surface-800 mb-3">施工图集</h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {caseItem.contentImages.map((img, index) => (
-                      <div key={index} className="rounded-lg overflow-hidden bg-dark-100 shadow-inner">
+                      <div key={index} className="rounded-lg overflow-hidden bg-surface-100 shadow-inner transition-transform duration-300 hover:scale-[1.02]">
                         <img src={img} alt={`${caseItem.title} - 图${index + 1}`} className="w-full h-64 object-cover" />
                       </div>
                     ))}
@@ -91,10 +91,10 @@ export default function CaseDetailPage({ params }: { params: { id: string } }) {
               )}
 
               <div>
-                <h3 className="text-lg font-semibold text-dark-800 mb-3">使用产品</h3>
+                <h3 className="text-lg font-semibold text-surface-800 mb-3">使用产品</h3>
                 <div className="flex flex-wrap gap-2">
                   {caseItem.products.map((product, index) => (
-                    <span key={index} className="rounded-lg bg-teal-500/10 text-primary-700 px-4 py-2 text-sm font-medium border border-teal-300/30">
+                    <span key={index} className="rounded-lg bg-teal-500/10 text-brand-700 px-4 py-2 text-sm font-medium border border-teal-300/30">
                       {product}
                     </span>
                   ))}

@@ -27,30 +27,30 @@ export default function NewsDetailPage({ params }: { params: { id: string } }) {
         : 'bg-gradient-to-r from-violet-500/10 to-purple-600/10 text-purple-700 border-purple-200/50';
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen page-enter">
       {/* 面包屑 */}
       <div className="bg-white/60 backdrop-blur-lg border-b border-cyan-900/8">
         <div className="max-w-7xl mx-auto px-4 py-4">
-          <div className="flex items-center text-sm text-dark-400">
-            <Link href="/" className="hover:text-primary-600 transition-colors">首页</Link>
+          <div className="flex items-center text-sm text-surface-400">
+            <Link href="/" className="hover:text-brand-600 transition-colors">首页</Link>
             <span className="mx-2">/</span>
-            <Link href="/news" className="hover:text-primary-600 transition-colors">新闻资讯</Link>
+            <Link href="/news" className="hover:text-brand-600 transition-colors">新闻资讯</Link>
             <span className="mx-2">/</span>
-            <span className="text-dark-700 truncate max-w-xs">{news.title}</span>
+            <span className="text-surface-700 truncate max-w-xs">{news.title}</span>
           </div>
         </div>
       </div>
 
       <div className="max-w-4xl mx-auto px-4 py-12">
-        <article className="tech-panel overflow-hidden">
+        <article className="tech-panel overflow-hidden card-border-glow">
           <div className="relative z-10">
             {/* 文章头部 */}
-            <div className="p-8 border-b border-dark-100">
+            <div className="p-8 border-b border-surface-100">
               <span className={`inline-block px-3 py-1 rounded-full text-sm mb-4 border font-medium ${categoryStyle}`}>
                 {news.category}
               </span>
-              <h1 className="text-3xl font-bold text-dark-800 mb-4">{news.title}</h1>
-              <div className="flex items-center text-sm text-dark-400 space-x-4">
+              <h1 className="text-3xl font-bold text-surface-800 mb-4">{news.title}</h1>
+              <div className="flex items-center text-sm text-surface-400 space-x-4">
                 <span>{news.date}</span>
                 <span className="inline-flex items-center gap-1">
                   <span className="h-1.5 w-1.5 rounded-full bg-teal-300" />
@@ -61,9 +61,9 @@ export default function NewsDetailPage({ params }: { params: { id: string } }) {
 
             {/* 文章内容 */}
             <div className="p-8">
-              <div className="prose prose-lg max-w-none text-dark-600 leading-relaxed">
+              <div className="text-surface-600 leading-relaxed space-y-4">
                 {news.content.split('\n').map((paragraph, index) => (
-                  <p key={index} className="mb-4">{paragraph}</p>
+                  <p key={index}>{paragraph}</p>
                 ))}
               </div>
             </div>
@@ -74,16 +74,16 @@ export default function NewsDetailPage({ params }: { params: { id: string } }) {
         <div className="mt-12">
           <div className="flex items-center gap-3 mb-6">
             <span className="section-kicker">RELATED</span>
-            <h2 className="text-xl font-bold text-dark-800">相关新闻</h2>
+            <h2 className="text-xl font-bold text-surface-800">相关新闻</h2>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {relatedNews.map((n) => (
-              <Link key={n.id} href={`/news/${n.id}`} className="tech-panel p-4 group block">
+              <Link key={n.id} href={`/news/${n.id}`} className="tech-panel p-4 group block card-border-glow hover:-translate-y-1 transition-all duration-300">
                 <div className="relative z-10">
-                  <h3 className="font-semibold text-dark-700 group-hover:text-primary-600 transition-colors line-clamp-2">
+                  <h3 className="font-semibold text-surface-700 group-hover:text-brand-600 transition-colors line-clamp-2">
                     {n.title}
                   </h3>
-                  <p className="text-sm text-dark-400 mt-2">{n.date}</p>
+                  <p className="text-sm text-surface-400 mt-2">{n.date}</p>
                 </div>
               </Link>
             ))}

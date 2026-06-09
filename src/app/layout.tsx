@@ -3,6 +3,7 @@ import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingContact from '@/components/FloatingContact';
+import InteractiveBackground from '@/components/InteractiveBackground';
 
 export const metadata: Metadata = {
   title: '河南磐霆速科新材料科技有限公司',
@@ -18,10 +19,13 @@ export default function RootLayout({
   return (
     <html lang="zh-CN">
       <body className="min-h-screen flex flex-col">
-        <Header />
-        <main className="flex-1">{children}</main>
-        <FloatingContact />
-        <Footer />
+        <InteractiveBackground />
+        <div className="relative z-10 flex flex-col min-h-screen">
+          <Header />
+          <main className="flex-1 page-enter">{children}</main>
+          <FloatingContact />
+          <Footer />
+        </div>
       </body>
     </html>
   );

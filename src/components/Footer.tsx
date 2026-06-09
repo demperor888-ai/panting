@@ -11,13 +11,13 @@ export default function Footer() {
           {/* 公司信息 */}
           <div>
             <div className="flex items-center space-x-3 mb-4">
-              <div className="relative w-10 h-10 rounded-lg flex items-center justify-center bg-gradient-tech shadow-glow overflow-hidden">
+              <div className="relative w-10 h-10 rounded-lg flex items-center justify-center bg-gradient-brand shadow-glow overflow-hidden">
                 <span className="absolute inset-x-1 top-1 h-px bg-cyan-200/70" />
                 <span className="text-white font-bold text-sm tracking-tight">PTSK</span>
               </div>
               <span className="text-lg font-bold">{siteConfig.shortName}</span>
             </div>
-            <p className="text-dark-300 text-sm leading-relaxed">{siteConfig.description}</p>
+            <p className="text-surface-300 text-sm leading-relaxed">{siteConfig.description}</p>
           </div>
 
           {/* 产品分类 */}
@@ -29,7 +29,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {productCategories.map((cat) => (
                 <li key={cat.id}>
-                  <Link href="/products" className="text-dark-300 hover:text-white transition-colors text-sm flex items-center gap-1.5 group">
+                  <Link href="/products" className="text-surface-300 hover:text-white transition-colors text-sm flex items-center gap-1.5 group">
                     <span className="w-1 h-1 rounded-full bg-cyan-300/50 group-hover:bg-teal-300 transition-colors" />
                     {cat.name}
                   </Link>
@@ -45,10 +45,10 @@ export default function Footer() {
               <span className="absolute -bottom-1 left-0 w-1/2 h-0.5 bg-gradient-to-r from-cyan-300 to-teal-300 rounded-full" />
             </h3>
             <ul className="space-y-2">
-              <li><Link href="/about" className="text-dark-300 hover:text-white transition-colors text-sm flex items-center gap-1.5 group"><span className="w-1 h-1 rounded-full bg-cyan-300/50 group-hover:bg-teal-300 transition-colors" />关于我们</Link></li>
-              <li><Link href="/cases" className="text-dark-300 hover:text-white transition-colors text-sm flex items-center gap-1.5 group"><span className="w-1 h-1 rounded-full bg-cyan-300/50 group-hover:bg-teal-300 transition-colors" />成功案例</Link></li>
-              <li><Link href="/news" className="text-dark-300 hover:text-white transition-colors text-sm flex items-center gap-1.5 group"><span className="w-1 h-1 rounded-full bg-cyan-300/50 group-hover:bg-teal-300 transition-colors" />新闻资讯</Link></li>
-              <li><Link href="/contact" className="text-dark-300 hover:text-white transition-colors text-sm flex items-center gap-1.5 group"><span className="w-1 h-1 rounded-full bg-cyan-300/50 group-hover:bg-teal-300 transition-colors" />联系我们</Link></li>
+              <li><Link href="/about" className="text-surface-300 hover:text-white transition-colors text-sm flex items-center gap-1.5 group"><span className="w-1 h-1 rounded-full bg-cyan-300/50 group-hover:bg-teal-300 transition-colors" />关于我们</Link></li>
+              <li><Link href="/cases" className="text-surface-300 hover:text-white transition-colors text-sm flex items-center gap-1.5 group"><span className="w-1 h-1 rounded-full bg-cyan-300/50 group-hover:bg-teal-300 transition-colors" />成功案例</Link></li>
+              <li><Link href="/news" className="text-surface-300 hover:text-white transition-colors text-sm flex items-center gap-1.5 group"><span className="w-1 h-1 rounded-full bg-cyan-300/50 group-hover:bg-teal-300 transition-colors" />新闻资讯</Link></li>
+              <li><Link href="/contact" className="text-surface-300 hover:text-white transition-colors text-sm flex items-center gap-1.5 group"><span className="w-1 h-1 rounded-full bg-cyan-300/50 group-hover:bg-teal-300 transition-colors" />联系我们</Link></li>
             </ul>
           </div>
 
@@ -58,7 +58,7 @@ export default function Footer() {
               联系我们
               <span className="absolute -bottom-1 left-0 w-1/2 h-0.5 bg-gradient-to-r from-cyan-300 to-teal-300 rounded-full" />
             </h3>
-            <ul className="space-y-2 text-sm text-dark-300">
+            <ul className="space-y-2 text-sm text-surface-300">
               <li className="flex items-center space-x-2">
                 <span className="h-1.5 w-1.5 rounded-full bg-teal-300" />
                 <span>吴经理 {siteConfig.phone}</span>
@@ -82,7 +82,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-cyan-200/10 mt-8 pt-8 text-center text-dark-400 text-sm">
+        <div className="border-t border-cyan-200/10 mt-8 pt-8 text-center text-surface-400 text-sm">
           <p>&copy; {new Date().getFullYear()} {siteConfig.name} 版权所有</p>
           <p className="mt-2">技术支持: 河南磐霆速科</p>
         </div>
