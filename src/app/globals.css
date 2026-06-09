@@ -334,3 +334,31 @@ html { scroll-behavior: smooth; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+
+/* ===== 明亮科技带 ===== */
+.light-tech-band {
+  @apply relative overflow-hidden;
+  background: linear-gradient(135deg, #eef2f7 0%, #e4ecf5 40%, #f0f4f9 100%);
+}
+.light-tech-band::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, rgba(92, 145, 176, 0.06) 1px, transparent 1px),
+    linear-gradient(rgba(92, 145, 176, 0.04) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: linear-gradient(to bottom, black, transparent 85%);
+  z-index: 0;
+}
+.light-tech-band::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 18% 30%, rgba(92, 145, 176, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 82% 70%, rgba(212, 155, 84, 0.04) 0%, transparent 45%);
+  z-index: 0;
+}
