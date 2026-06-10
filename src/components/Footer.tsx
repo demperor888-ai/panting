@@ -30,7 +30,7 @@ export default function Footer() {
               {productCategories.map((cat) => (
                 <li key={cat.id}>
                   <Link href="/products" className="text-surface-300 hover:text-white transition-colors text-sm flex items-center gap-1.5 group">
-                    <span className="w-1 h-1 rounded-full bg-cyan-300/50 group-hover:bg-teal-300 transition-colors" />
+                    <span className="w-1 h-1 rounded-full bg-brand-400/50 group-hover:bg-accent-400 transition-colors" />
                     {cat.name}
                   </Link>
                 </li>
@@ -45,10 +45,10 @@ export default function Footer() {
               <span className="absolute -bottom-1 left-0 w-1/2 h-0.5 bg-gradient-to-r from-cyan-300 to-teal-300 rounded-full" />
             </h3>
             <ul className="space-y-2">
-              <li><Link href="/about" className="text-surface-300 hover:text-white transition-colors text-sm flex items-center gap-1.5 group"><span className="w-1 h-1 rounded-full bg-cyan-300/50 group-hover:bg-teal-300 transition-colors" />关于我们</Link></li>
-              <li><Link href="/cases" className="text-surface-300 hover:text-white transition-colors text-sm flex items-center gap-1.5 group"><span className="w-1 h-1 rounded-full bg-cyan-300/50 group-hover:bg-teal-300 transition-colors" />成功案例</Link></li>
-              <li><Link href="/news" className="text-surface-300 hover:text-white transition-colors text-sm flex items-center gap-1.5 group"><span className="w-1 h-1 rounded-full bg-cyan-300/50 group-hover:bg-teal-300 transition-colors" />新闻资讯</Link></li>
-              <li><Link href="/contact" className="text-surface-300 hover:text-white transition-colors text-sm flex items-center gap-1.5 group"><span className="w-1 h-1 rounded-full bg-cyan-300/50 group-hover:bg-teal-300 transition-colors" />联系我们</Link></li>
+              <li><Link href="/about" className="text-surface-300 hover:text-white transition-colors text-sm flex items-center gap-1.5 group"><span className="w-1 h-1 rounded-full bg-brand-400/50 group-hover:bg-accent-400 transition-colors" />关于我们</Link></li>
+              <li><Link href="/cases" className="text-surface-300 hover:text-white transition-colors text-sm flex items-center gap-1.5 group"><span className="w-1 h-1 rounded-full bg-brand-400/50 group-hover:bg-accent-400 transition-colors" />成功案例</Link></li>
+              <li><Link href="/news" className="text-surface-300 hover:text-white transition-colors text-sm flex items-center gap-1.5 group"><span className="w-1 h-1 rounded-full bg-brand-400/50 group-hover:bg-accent-400 transition-colors" />新闻资讯</Link></li>
+              <li><Link href="/contact" className="text-surface-300 hover:text-white transition-colors text-sm flex items-center gap-1.5 group"><span className="w-1 h-1 rounded-full bg-brand-400/50 group-hover:bg-accent-400 transition-colors" />联系我们</Link></li>
             </ul>
           </div>
 
@@ -60,19 +60,19 @@ export default function Footer() {
             </h3>
             <ul className="space-y-2 text-sm text-surface-300">
               <li className="flex items-center space-x-2">
-                <span className="h-1.5 w-1.5 rounded-full bg-teal-300" />
+                <span className="h-1.5 w-1.5 rounded-full bg-accent-400" />
                 <span>吴经理 {siteConfig.phone}</span>
               </li>
               <li className="flex items-center space-x-2">
-                <span className="h-1.5 w-1.5 rounded-full bg-cyan-300" />
-                <span>{siteConfig.email}</span>
+                <span className="h-1.5 w-1.5 rounded-full bg-brand-400" />
+                <span>邮箱 {siteConfig.email}</span>
               </li>
               <li className="flex items-center space-x-2">
-                <span className="h-1.5 w-1.5 rounded-full bg-amber-300" />
-                <span>{siteConfig.address}</span>
+                <span className="h-1.5 w-1.5 rounded-full bg-accent-400" />
+                <span>地址 {siteConfig.address}</span>
               </li>
               <li className="flex items-center space-x-2">
-                <span className="h-1.5 w-1.5 rounded-full bg-teal-300" />
+                <span className="h-1.5 w-1.5 rounded-full bg-accent-400" />
                 <span>微信扫码联系</span>
               </li>
               <li>
