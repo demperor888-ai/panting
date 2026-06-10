@@ -59,7 +59,7 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen">
       {/* 顶部Banner */}
-      <div className="dark-tech-band-premium relative py-24 overflow-hidden">
+      <div className="dark-band-premium relative py-24 overflow-hidden">
         <div className="scan-line" />
         <div className="relative max-w-7xl mx-auto px-4 text-center">
           <ScrollReveal>

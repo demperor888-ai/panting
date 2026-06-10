@@ -57,7 +57,7 @@ export default function Banner({ banners }: BannerProps) {
   ];
 
   return (
-    <div className="relative min-h-[620px] overflow-hidden dark-tech-band-premium">
+    <div className="relative min-h-[620px] overflow-hidden dark-band-premium">
       {/* 切换背景 */}
       <AnimatePresence mode="popLayout" custom={direction}>
         <motion.div
@@ -77,7 +77,7 @@ export default function Banner({ banners }: BannerProps) {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8 }}
             style={{
-              background: 'linear-gradient(105deg,rgba(5,8,16,0.88) 0%,rgba(6,17,31,0.76) 44%,rgba(6,17,31,0.38) 100%)',
+              background: 'linear-gradient(105deg,rgba(16,26,43,0.92) 0%,rgba(30,45,67,0.72) 44%,rgba(16,26,43,0.32) 100%)',
             }}
           />
         </motion.div>
@@ -136,7 +136,7 @@ export default function Banner({ banners }: BannerProps) {
               <div className="flex flex-wrap items-center gap-4">
                 <Link
                   href={banners[currentIndex].link}
-                  className="glow-btn-intense inline-flex items-center gap-2 px-8 py-3.5"
+                  className="btn-glow inline-flex items-center gap-2 px-8 py-3.5"
                 >
                   <span>查看产品体系</span>
                   <motion.svg

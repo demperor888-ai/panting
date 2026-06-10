@@ -17,11 +17,11 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen">
       {/* 顶部Banner */}
-      <div className="dark-tech-band-premium relative py-24 overflow-hidden">
+      <div className="dark-band-premium relative py-24 overflow-hidden">
         <div className="scan-line" />
         <div className="relative max-w-7xl mx-auto px-4 text-center">
           <ScrollReveal>
-            <span className="section-kicker border-cyan-300/25 bg-white/10 text-cyan-100">ABOUT US</span>
+            <span className="section-kicker section-kicker-light">ABOUT US</span>
             <h1 className="text-4xl font-bold text-white mt-4">关于我们</h1>
           </ScrollReveal>
         </div>
@@ -65,10 +65,10 @@ export default function AboutPage() {
 
         {/* 企业文化 */}
         <ScrollReveal delay={0.1}>
-          <section className="dark-tech-band-premium relative py-16 mb-8 rounded-xl overflow-hidden">
+          <section className="dark-band-premium relative py-16 mb-8 rounded-xl overflow-hidden">
             <div className="relative z-10 max-w-5xl mx-auto px-4">
               <div className="text-center mb-10">
-                <span className="section-kicker border-cyan-300/25 bg-white/10 text-cyan-100">OUR CULTURE</span>
+                <span className="section-kicker section-kicker-light">OUR CULTURE</span>
                 <h2 className="text-2xl font-bold text-white mt-2">企业文化</h2>
               </div>
               <div className="grid md:grid-cols-3 gap-6">
@@ -80,11 +80,11 @@ export default function AboutPage() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.4, delay: i * 0.1 }}
                     whileHover={{ y: -4, scale: 1.02 }}
-                    className="rounded-xl border border-white/10 bg-white/10 backdrop-blur-md p-6 text-center group hover:border-cyan-200/30 transition-all duration-300"
+                    className="rounded-xl border border-white/10 bg-white/10 backdrop-blur-md p-6 text-center group hover:border-white/15 transition-all duration-300"
                   >
                     <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">{item.icon}</div>
                     <h3 className="text-lg font-semibold text-white mb-2">{item.title}</h3>
-                    <p className="text-cyan-50/70">{item.desc}</p>
+                    <p className="text-white/70">{item.desc}</p>
                   </motion.div>
                 ))}
               </div>

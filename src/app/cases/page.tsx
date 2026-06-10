@@ -26,13 +26,13 @@ export default function CasesPage() {
   return (
     <div className="min-h-screen">
       {/* 顶部Banner */}
-      <div className="dark-tech-band-premium relative py-24 overflow-hidden">
+      <div className="dark-band-premium relative py-24 overflow-hidden">
         <div className="scan-line" />
         <div className="relative max-w-7xl mx-auto px-4 text-center">
           <ScrollReveal>
-            <span className="section-kicker border-cyan-300/25 bg-white/10 text-cyan-100">PROJECT CASES</span>
+            <span className="section-kicker section-kicker-light">PROJECT CASES</span>
             <h1 className="text-4xl font-bold text-white mt-4">成功案例</h1>
-            <p className="mt-2 text-cyan-50/60">专业服务，品质见证</p>
+            <p className="mt-2 text-white/60">专业服务，品质见证</p>
           </ScrollReveal>
         </div>
       </div>

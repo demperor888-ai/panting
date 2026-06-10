@@ -5,7 +5,7 @@ import { siteConfig, productCategories } from '@/data/siteData';
 
 export default function Footer() {
   return (
-    <footer className="dark-tech-band text-white">
+    <footer className="dark-band text-white">
       <div className="relative max-w-7xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* 公司信息 */}

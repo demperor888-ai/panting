@@ -33,13 +33,13 @@ export default function ProductsPage() {
   return (
     <div className="min-h-screen">
       {/* 顶部Banner */}
-      <div className="dark-tech-band-premium relative py-24 overflow-hidden">
+      <div className="dark-band-premium relative py-24 overflow-hidden">
         <div className="scan-line" />
         <div className="relative max-w-7xl mx-auto px-4 text-center">
           <ScrollReveal>
-            <span className="section-kicker border-cyan-300/25 bg-white/10 text-cyan-100">PRODUCTS</span>
+            <span className="section-kicker section-kicker-light">PRODUCTS</span>
             <h1 className="text-4xl font-bold text-white mt-4">产品中心</h1>
-            <p className="mt-2 text-cyan-50/60">专注新型建筑材料研发与生产</p>
+            <p className="mt-2 text-white/60">专注新型建筑材料研发与生产</p>
           </ScrollReveal>
         </div>
       </div>

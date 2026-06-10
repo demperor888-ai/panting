@@ -35,13 +35,13 @@ export default function NewsPage() {
   return (
     <div className="min-h-screen">
       {/* 顶部Banner */}
-      <div className="dark-tech-band-premium relative py-24 overflow-hidden">
+      <div className="dark-band-premium relative py-24 overflow-hidden">
         <div className="scan-line" />
         <div className="relative max-w-7xl mx-auto px-4 text-center">
           <ScrollReveal>
-            <span className="section-kicker border-cyan-300/25 bg-white/10 text-cyan-100">NEWSROOM</span>
+            <span className="section-kicker section-kicker-light">NEWSROOM</span>
             <h1 className="text-4xl font-bold text-white mt-4">新闻资讯</h1>
-            <p className="mt-2 text-cyan-50/60">了解行业动态，掌握最新资讯</p>
+            <p className="mt-2 text-white/60">了解行业动态，掌握最新资讯</p>
           </ScrollReveal>
         </div>
       </div>

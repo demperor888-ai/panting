@@ -38,8 +38,8 @@ export default function Header() {
       transition={{ duration: 0.3, ease: 'easeInOut' }}
       className={`sticky top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-white/90 backdrop-blur-2xl shadow-glass border-b border-cyan-900/10'
-          : 'bg-white/70 backdrop-blur-lg border-b border-white/40'
+          ? 'bg-white/90 backdrop-blur-2xl shadow-glass border-b border-brand-900/10'
+          : 'bg-white/70 backdrop-blur-lg border-b border-white/30'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4">
@@ -77,7 +77,7 @@ export default function Header() {
 
           <motion.a
             href={`tel:${siteConfig.phone}`}
-            className="hidden lg:inline-flex items-center gap-2 rounded-lg border border-cyan-900/10 bg-surface-900 px-4 py-2 text-sm font-semibold text-white shadow-[0_12px_28px_rgba(6,17,31,0.18)] transition hover:bg-brand-800 hover:shadow-[0_14px_34px_rgba(18,199,181,0.22)]"
+            className="hidden lg:inline-flex items-center gap-2 rounded-lg border border-brand-900/10 bg-surface-900 px-4 py-2 text-sm font-semibold text-white shadow-[0_12px_28px_rgba(6,17,31,0.18)] transition hover:bg-brand-800 hover:shadow-[0_14px_34px_rgba(107,139,183,0.22)]"
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
           >

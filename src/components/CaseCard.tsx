@@ -24,7 +24,7 @@ export default function CaseCard({ caseItem }: CaseCardProps) {
             alt={caseItem.title}
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[rgba(5,16,32,0.7)] to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[rgba(16,26,43,0.72)] to-transparent" />
           <div className="absolute bottom-3 left-3">
             <span className="rounded-md bg-white/20 backdrop-blur-md px-2 py-0.5 text-xs font-semibold text-white">
               {caseItem.client}

@@ -66,7 +66,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
                 </div>
               </div>
 
-              <Link href="/contact" className="glow-btn-intense px-8 py-3 inline-flex items-center gap-2 rounded-lg">
+              <Link href="/contact" className="btn-glow px-8 py-3 inline-flex items-center gap-2 rounded-lg">
                 咨询报价
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

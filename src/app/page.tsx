@@ -117,14 +117,14 @@ export default function HomePage() {
       </section>
 
       {/* 产品展示 */}
-      <section className="dark-tech-band-premium py-20">
+      <section className="dark-band-premium py-20">
         <div className="relative max-w-7xl mx-auto px-4">
           <ScrollReveal>
             <div className="text-center mb-12">
-              <span className="section-kicker border-cyan-300/25 bg-white/10 text-cyan-100">PRODUCT SYSTEM</span>
+              <span className="section-kicker section-kicker-light">PRODUCT SYSTEM</span>
               <h2 className="text-3xl font-bold text-white mt-4">产品中心</h2>
               <div className="heading-underline" />
-              <p className="text-cyan-50/70 mt-4">围绕加固、修复、防护、连接四类工程场景构建材料方案</p>
+              <p className="text-white/70 mt-4">围绕加固、修复、防护、连接四类工程场景构建材料方案</p>
             </div>
           </ScrollReveal>
 
@@ -134,7 +134,7 @@ export default function HomePage() {
                 <Link
                   key={cat.id}
                   href={`/products#${cat.id}`}
-                  className="rounded-lg border border-cyan-200/20 bg-white/10 px-5 py-2.5 font-medium text-cyan-50 backdrop-blur-md transition-all duration-300 hover:border-teal-200/50 hover:bg-white/20 hover:shadow-[0_0_28px_rgba(18,199,181,0.16)]"
+                  className="rounded-lg border border-white/10 bg-white/10 px-5 py-2.5 font-medium text-cyan-50 backdrop-blur-md transition-all duration-300 hover:border-white/25 hover:bg-white/15 hover:shadow-[0_0_28px_rgba(107,139,183,0.12)]"
                 >
                   {cat.name}
                 </Link>
@@ -158,7 +158,7 @@ export default function HomePage() {
 
           <ScrollReveal delay={0.3}>
             <div className="text-center mt-8">
-              <Link href="/products" className="inline-flex rounded-lg border border-cyan-200/30 bg-white/10 px-6 py-3 font-semibold text-white backdrop-blur-md transition hover:bg-white/20">
+              <Link href="/products" className="inline-flex rounded-lg border border-white/15 bg-white/10 px-6 py-3 font-semibold text-white backdrop-blur-md transition hover:bg-white/12">
                 查看全部产品
               </Link>
             </div>
@@ -237,7 +237,7 @@ export default function HomePage() {
       </section>
 
       {/* 联系我们 CTA */}
-      <section className="dark-tech-band-premium relative py-28 overflow-hidden" style={{ backgroundImage: `url('/images/banners/xybz.jpg')` }}>
+      <section className="dark-band-premium relative py-28 overflow-hidden" style={{ backgroundImage: `url('/images/banners/xybz.jpg')` }}>
         <div className="absolute inset-0 bg-gradient-to-r from-surface-950/95 via-brand-900/80 to-surface-900/70" />
         <div className="scan-line" />
         <div className="relative max-w-7xl mx-auto px-4 text-center">
@@ -252,7 +252,7 @@ export default function HomePage() {
             <div className="flex flex-wrap justify-center gap-4">
               <Link
                 href="/contact"
-                className="glow-btn-intense px-8 py-3.5 rounded-lg text-base inline-flex items-center gap-2"
+                className="btn-glow px-8 py-3.5 rounded-lg text-base inline-flex items-center gap-2"
               >
                 <span>联系我们</span>
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -261,7 +261,7 @@ export default function HomePage() {
               </Link>
               <motion.a
                 href={`tel:${siteConfig.phone}`}
-                className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/30 text-white px-8 py-3.5 rounded-lg font-semibold hover:bg-white/20 hover:border-white/50 transition-all duration-300"
+                className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/30 text-white px-8 py-3.5 rounded-lg font-semibold hover:bg-white/15 hover:border-white/50 transition-all duration-300"
                 whileHover={{ scale: 1.03 }}
                 transition={{ type: 'spring', stiffness: 200 }}
               >
