@@ -7,13 +7,23 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "migrate": "npx tsx scripts/migrate-to-sanity.ts"
   },
   "dependencies": {
+    "@babel/plugin-transform-class-static-block": "^7.29.7",
+    "@babel/plugin-transform-private-methods": "^7.29.7",
+    "@sanity/client": "^7.23.0",
+    "@sanity/image-url": "^2.1.1",
+    "@sanity/ui": "^3.3.5",
+    "@sanity/vision": "^3.88.3",
     "framer-motion": "^12.40.0",
     "next": "^14.0.0",
+    "next-sanity": "^9.12.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "sanity": "^3.88.3",
+    "styled-components": "^6.4.3",
     "typescript": "^5.0.0"
   },
   "devDependencies": {

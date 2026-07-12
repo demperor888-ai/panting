@@ -1,10 +1,12 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import ScrollReveal from '@/components/ScrollReveal';
 import ProductCard from '@/components/ProductCard';
 import { initialProducts, productCategories } from '@/data/siteData';
+import * as bridge from '@/sanity/bridge';
+import type { ProductItem } from '@/sanity/bridge';
 
 const staggerContainer = {
   hidden: { opacity: 0 },
@@ -24,11 +26,20 @@ const staggerItem = {
 };
 
 export default function ProductsPage() {
+  const [allProducts, setAllProducts] = useState<ProductItem[]>(initialProducts);
   const [activeCategory, setActiveCategory] = useState<string>('all');
 
+  useEffect(() => {
+    if (!bridge.hasSanity()) return;
+    (async () => {
+      const p = await bridge.getProducts();
+      setAllProducts(p);
+    })();
+  }, []);
+
   const filteredProducts = activeCategory === 'all'
-    ? initialProducts
-    : initialProducts.filter(p => p.category === activeCategory);
+    ? allProducts
+    : allProducts.filter(p => p.category === activeCategory);
 
   return (
     <div className="min-h-screen">

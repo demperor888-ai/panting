@@ -1,8 +1,10 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import ScrollReveal from '@/components/ScrollReveal';
-import { siteConfig } from '@/data/siteData';
+import { siteConfig as localSiteConfig } from '@/data/siteData';
+import * as bridge from '@/sanity/bridge';
 
 const PhoneIcon = () => (
   <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24">
@@ -27,16 +29,17 @@ const MessageIcon = () => (
   </svg>
 );
 
-const iconVariants = {
-  initial: { rotate: -4, scale: 0.92 },
-  hover: {
-    rotate: 0,
-    scale: 1.08,
-    transition: { type: 'spring', stiffness: 250, damping: 12 },
-  },
-};
-
 export default function ContactPage() {
+  const [siteConfig, setSiteConfig] = useState(localSiteConfig);
+
+  useEffect(() => {
+    if (!bridge.hasSanity()) return;
+    (async () => {
+      const s = await bridge.getSiteConfig();
+      setSiteConfig(s);
+    })();
+  }, []);
+
   const contacts = [
     {
       Icon: PhoneIcon,
@@ -88,16 +91,13 @@ export default function ContactPage() {
                       transition={{ duration: 0.4, delay: i * 0.12 }}
                       className="flex items-start space-x-5 group"
                     >
-                      {/* Icon container */}
                       <motion.div
                         className="relative w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0 text-white overflow-hidden"
                         initial={{ rotate: -3, scale: 0.94 }}
                         whileHover={{ rotate: 0, scale: 1.08 }}
                         transition={{ type: "spring", stiffness: 250, damping: 14 }}
                       >
-                        {/* Background */}
                         <div className="absolute inset-0 bg-gradient-to-br from-brand-800 via-brand-700 to-brand-600" />
-                        {/* Subtle inner glow ring */}
                         <div className="absolute inset-[3px] rounded-[10px] border border-white/15" />
                         <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-white/10 via-transparent to-transparent" />
                         <span className="relative z-10">

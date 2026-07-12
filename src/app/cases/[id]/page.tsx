@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { initialCases } from '@/data/siteData';
+import * as bridge from '@/sanity/bridge';
 
 export function generateStaticParams() {
   return initialCases.map((caseItem) => ({
@@ -8,8 +9,9 @@ export function generateStaticParams() {
   }));
 }
 
-export default function CaseDetailPage({ params }: { params: { id: string } }) {
-  const caseItem = initialCases.find(c => c.id === params.id);
+export default async function CaseDetailPage({ params: rawParams }: { params: { id: string } }) {
+  const params = await rawParams;
+  const caseItem = await bridge.getCaseBySlug(params.id);
 
   if (!caseItem) {
     notFound();

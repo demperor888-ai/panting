@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { initialProducts, productCategories } from '@/data/siteData';
+import * as bridge from '@/sanity/bridge';
 
 export function generateStaticParams() {
   return initialProducts.map((product) => ({
@@ -8,17 +9,16 @@ export function generateStaticParams() {
   }));
 }
 
-export default function ProductDetailPage({ params }: { params: { id: string } }) {
-  const product = initialProducts.find(p => p.id === params.id);
+export default async function ProductDetailPage({ params: rawParams }: { params: { id: string } }) {
+  const params = await rawParams;
+  const product = await bridge.getProductBySlug(params.id);
 
   if (!product) {
     notFound();
   }
 
   const category = productCategories.find(c => c.id === product.category);
-  const relatedProducts = initialProducts
-    .filter(p => p.category === product.category && p.id !== product.id)
-    .slice(0, 3);
+  const relatedProducts = await bridge.getRelatedProducts(product.id, product.category);
 
   return (
     <div className="min-h-screen page-enter">

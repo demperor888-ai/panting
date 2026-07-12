@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { initialNews } from '@/data/siteData';
+import * as bridge from '@/sanity/bridge';
 
 export function generateStaticParams() {
   return initialNews.map((news) => ({
@@ -8,16 +9,15 @@ export function generateStaticParams() {
   }));
 }
 
-export default function NewsDetailPage({ params }: { params: { id: string } }) {
-  const news = initialNews.find(n => n.id === params.id);
+export default async function NewsDetailPage({ params: rawParams }: { params: { id: string } }) {
+  const params = await rawParams;
+  const news = await bridge.getNewsBySlug(params.id);
 
   if (!news) {
     notFound();
   }
 
-  const relatedNews = initialNews
-    .filter(n => n.id !== news.id)
-    .slice(0, 3);
+  const relatedNews = await bridge.getRelatedNews(news.id);
 
   const categoryStyle =
     news.category === '公司动态'

@@ -1,9 +1,12 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import ScrollReveal from '@/components/ScrollReveal';
 import CaseCard from '@/components/CaseCard';
 import { initialCases } from '@/data/siteData';
+import * as bridge from '@/sanity/bridge';
+import type { CaseItem } from '@/sanity/bridge';
 
 const staggerContainer = {
   hidden: { opacity: 0 },
@@ -23,6 +26,16 @@ const staggerItem = {
 };
 
 export default function CasesPage() {
+  const [cases, setCases] = useState<CaseItem[]>(initialCases);
+
+  useEffect(() => {
+    if (!bridge.hasSanity()) return;
+    (async () => {
+      const c = await bridge.getCases();
+      setCases(c);
+    })();
+  }, []);
+
   return (
     <div className="min-h-screen">
       {/* 顶部Banner */}
@@ -45,7 +58,7 @@ export default function CasesPage() {
           whileInView="visible"
           viewport={{ once: true, margin: '-40px' }}
         >
-          {initialCases.map((caseItem) => (
+          {cases.map((caseItem) => (
             <motion.div key={caseItem.id} variants={staggerItem}>
               <CaseCard caseItem={caseItem} />
             </motion.div>

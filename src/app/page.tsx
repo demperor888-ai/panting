@@ -1,5 +1,6 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import Banner from '@/components/Banner';
@@ -8,7 +9,9 @@ import AnimatedCounter from '@/components/AnimatedCounter';
 import ProductCard from '@/components/ProductCard';
 import NewsCard from '@/components/NewsCard';
 import CaseCard from '@/components/CaseCard';
-import { initialProducts, initialNews, initialCases, initialBanners, productCategories, siteConfig } from '@/data/siteData';
+import { initialProducts, initialNews, initialCases, initialBanners, productCategories, siteConfig as localSiteConfig } from '@/data/siteData';
+import * as bridge from '@/sanity/bridge';
+import type { ProductItem, NewsItem, CaseItem, BannerItem } from '@/sanity/bridge';
 
 const staggerContainer = {
   hidden: { opacity: 0 },
@@ -28,14 +31,34 @@ const staggerItem = {
 };
 
 export default function HomePage() {
-  const featuredProducts = initialProducts.slice(0, 6);
-  const latestNews = initialNews.slice(0, 4);
-  const featuredCases = initialCases.slice(0, 3);
+  const [products, setProducts] = useState<ProductItem[]>(initialProducts.slice(0, 6));
+  const [news, setNews] = useState<NewsItem[]>(initialNews.slice(0, 4));
+  const [cases, setCases] = useState<CaseItem[]>(initialCases.slice(0, 3));
+  const [banners, setBanners] = useState<BannerItem[]>(initialBanners);
+  const [siteConfig, setSiteConfig] = useState(localSiteConfig);
+
+  useEffect(() => {
+    if (!bridge.hasSanity()) return;
+    (async () => {
+      const [p, n, c, b, s] = await Promise.all([
+        bridge.getProducts().then(r => r.slice(0, 6)),
+        bridge.getNews().then(r => r.slice(0, 4)),
+        bridge.getCases().then(r => r.slice(0, 3)),
+        bridge.getBanners(),
+        bridge.getSiteConfig(),
+      ]);
+      setProducts(p);
+      setNews(n);
+      setCases(c);
+      setBanners(b);
+      setSiteConfig(s);
+    })();
+  }, []);
 
   return (
     <div>
       {/* Banner */}
-      <Banner banners={initialBanners} />
+      <Banner banners={banners} />
 
       {/* 公司简介 */}
       <section className="py-20 section-dot-pattern">
@@ -149,7 +172,7 @@ export default function HomePage() {
             whileInView="visible"
             viewport={{ once: true, margin: '-40px' }}
           >
-            {featuredProducts.map((product) => (
+            {products.map((product) => (
               <motion.div key={product.id} variants={staggerItem}>
                 <ProductCard product={product} />
               </motion.div>
@@ -184,9 +207,9 @@ export default function HomePage() {
             whileInView="visible"
             viewport={{ once: true, margin: '-40px' }}
           >
-            {latestNews.map((news) => (
-              <motion.div key={news.id} variants={staggerItem}>
-                <NewsCard news={news} />
+            {news.map((item) => (
+              <motion.div key={item.id} variants={staggerItem}>
+                <NewsCard news={item} />
               </motion.div>
             ))}
           </motion.div>
@@ -219,7 +242,7 @@ export default function HomePage() {
             whileInView="visible"
             viewport={{ once: true, margin: '-40px' }}
           >
-            {featuredCases.map((caseItem) => (
+            {cases.map((caseItem) => (
               <motion.div key={caseItem.id} variants={staggerItem}>
                 <CaseCard caseItem={caseItem} />
               </motion.div>

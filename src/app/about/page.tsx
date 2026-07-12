@@ -1,11 +1,23 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import ScrollReveal from '@/components/ScrollReveal';
-import { siteConfig, productCategories } from '@/data/siteData';
+import { siteConfig as localSiteConfig, productCategories } from '@/data/siteData';
+import * as bridge from '@/sanity/bridge';
 
 export default function AboutPage() {
+  const [siteConfig, setSiteConfig] = useState(localSiteConfig);
+
+  useEffect(() => {
+    if (!bridge.hasSanity()) return;
+    (async () => {
+      const s = await bridge.getSiteConfig();
+      setSiteConfig(s);
+    })();
+  }, []);
+
   const cultureItems = [
     { icon: '🎯', title: '企业愿景', desc: '成为新型建筑材料行业的领军企业' },
     { icon: '💡', title: '企业使命', desc: '为客户创造价值，为社会贡献力量' },

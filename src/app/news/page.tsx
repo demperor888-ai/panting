@@ -1,10 +1,12 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import ScrollReveal from '@/components/ScrollReveal';
 import NewsCard from '@/components/NewsCard';
 import { initialNews } from '@/data/siteData';
+import * as bridge from '@/sanity/bridge';
+import type { NewsItem } from '@/sanity/bridge';
 
 const categories = ['全部', '公司动态', '行业资讯', '技术文章'];
 
@@ -26,11 +28,20 @@ const staggerItem = {
 };
 
 export default function NewsPage() {
+  const [allNews, setAllNews] = useState<NewsItem[]>(initialNews);
   const [activeCategory, setActiveCategory] = useState('全部');
 
+  useEffect(() => {
+    if (!bridge.hasSanity()) return;
+    (async () => {
+      const n = await bridge.getNews();
+      setAllNews(n);
+    })();
+  }, []);
+
   const filteredNews = activeCategory === '全部'
-    ? initialNews
-    : initialNews.filter(n => n.category === activeCategory);
+    ? allNews
+    : allNews.filter(n => n.category === activeCategory);
 
   return (
     <div className="min-h-screen">
