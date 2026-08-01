@@ -99,17 +99,17 @@ export interface SiteConfigItem {
 
 // ===================== 工具函数 =====================
 
-function mapSanityImage(img: any): string {
-  if (!img) return '/images/products/products-2.jpg';
+function mapSanityImage(img: any, fallback: string = '/images/products/products-2.jpg'): string {
+  if (!img) return fallback;
   if (img.asset?._ref) {
     return `https://cdn.sanity.io/images/${projectId}/production/${img.asset._ref.replace('image-', '').replace('-jpg', '.jpg').replace('-png', '.png').replace('-jpeg', '.jpeg')}`;
   }
   if (typeof img === 'string') return img;
-  return '/images/products/products-2.jpg';
+  return fallback;
 }
 
 function mapSanityImageArray(images: any[]): string[] {
-  return (images || []).map(mapSanityImage);
+  return (images || []).map((img: any) => mapSanityImage(img));
 }
 
 // ===================== 数据获取函数 =====================
@@ -117,34 +117,38 @@ function mapSanityImageArray(images: any[]): string[] {
 const productFields = '{ _id, name, "slug": slug.current, category, description, features, image }';
 
 export async function getProducts(): Promise<ProductItem[]> {
+  const { initialProducts } = require('@/data/siteData');
   const data = await sanityFetch<any[]>('*[_type == "product"] | order(order asc) ' + productFields);
   if (data && data.length > 0) {
-    return data.map((p: any) => ({
-      id: p.slug || p._id,
-      name: p.name,
-      category: p.category,
-      description: p.description || '',
-      image: mapSanityImage(p.image),
-      features: p.features || [],
-    }));
+    return data.map((p: any) => {
+      const local = initialProducts.find((x: any) => x.id === (p.slug || p._id));
+      return {
+        id: p.slug || p._id,
+        name: p.name,
+        category: p.category,
+        description: p.description || '',
+        image: mapSanityImage(p.image, local?.image),
+        features: p.features || [],
+      };
+    });
   }
-  const { initialProducts } = require('@/data/siteData');
   return initialProducts as ProductItem[];
 }
 
 export async function getProductBySlug(slug: string): Promise<ProductItem | null> {
+  const { initialProducts } = require('@/data/siteData');
   const data = await sanityFetch<any>('*[_type == "product" && slug.current == $slug][0] ' + productFields, { slug });
   if (data) {
+    const local = initialProducts.find((x: any) => x.id === (data.slug || data._id));
     return {
       id: data.slug || data._id,
       name: data.name,
       category: data.category,
       description: data.description || '',
-      image: mapSanityImage(data.image),
+      image: mapSanityImage(data.image, local?.image),
       features: data.features || [],
     };
   }
-  const { initialProducts } = require('@/data/siteData');
   return initialProducts.find((p: any) => p.id === slug) || null;
 }
 
@@ -154,38 +158,42 @@ export async function getRelatedProducts(slug: string, category: string): Promis
 }
 
 export async function getNews(): Promise<NewsItem[]> {
+  const { initialNews } = require('@/data/siteData');
   const data = await sanityFetch<any[]>('*[_type == "news"] | order(date desc) { _id, title, "slug": slug.current, category, summary, content, image, date, views }');
   if (data && data.length > 0) {
-    return data.map((n: any) => ({
-      id: n.slug || n._id,
-      title: n.title,
-      category: n.category,
-      summary: n.summary || '',
-      content: n.content || '',
-      image: mapSanityImage(n.image),
-      date: n.date,
-      views: n.views || 0,
-    }));
+    return data.map((n: any) => {
+      const local = initialNews.find((x: any) => x.id === (n.slug || n._id));
+      return {
+        id: n.slug || n._id,
+        title: n.title,
+        category: n.category,
+        summary: n.summary || '',
+        content: n.content || '',
+        image: mapSanityImage(n.image, local?.image),
+        date: n.date,
+        views: n.views || 0,
+      };
+    });
   }
-  const { initialNews } = require('@/data/siteData');
   return initialNews as NewsItem[];
 }
 
 export async function getNewsBySlug(slug: string): Promise<NewsItem | null> {
+  const { initialNews } = require('@/data/siteData');
   const data = await sanityFetch<any>('*[_type == "news" && slug.current == $slug][0] { _id, title, "slug": slug.current, category, summary, content, image, date, views }', { slug });
   if (data) {
+    const local = initialNews.find((x: any) => x.id === (data.slug || data._id));
     return {
       id: data.slug || data._id,
       title: data.title,
       category: data.category,
       summary: data.summary || '',
       content: data.content || '',
-      image: mapSanityImage(data.image),
+      image: mapSanityImage(data.image, local?.image),
       date: data.date,
       views: data.views || 0,
     };
   }
-  const { initialNews } = require('@/data/siteData');
   return initialNews.find((n: any) => n.id === slug) || null;
 }
 
@@ -195,56 +203,63 @@ export async function getRelatedNews(slug: string): Promise<NewsItem[]> {
 }
 
 export async function getCases(): Promise<CaseItem[]> {
+  const { initialCases } = require('@/data/siteData');
   const data = await sanityFetch<any[]>('*[_type == "case"] | order(date desc) { _id, title, "slug": slug.current, client, location, description, image, contentImages, products, date }');
   if (data && data.length > 0) {
-    return data.map((c: any) => ({
-      id: c.slug || c._id,
-      title: c.title,
-      client: c.client || '',
-      location: c.location || '',
-      description: c.description || '',
-      image: mapSanityImage(c.image),
-      contentImages: mapSanityImageArray(c.contentImages),
-      products: c.products || [],
-      date: c.date,
-    }));
+    return data.map((c: any) => {
+      const local = initialCases.find((x: any) => x.id === (c.slug || c._id));
+      return {
+        id: c.slug || c._id,
+        title: c.title,
+        client: c.client || '',
+        location: c.location || '',
+        description: c.description || '',
+        image: mapSanityImage(c.image, local?.image),
+        contentImages: c.contentImages?.length ? mapSanityImageArray(c.contentImages) : local?.contentImages || [],
+        products: c.products || [],
+        date: c.date,
+      };
+    });
   }
-  const { initialCases } = require('@/data/siteData');
   return initialCases as CaseItem[];
 }
 
 export async function getCaseBySlug(slug: string): Promise<CaseItem | null> {
+  const { initialCases } = require('@/data/siteData');
   const data = await sanityFetch<any>('*[_type == "case" && slug.current == $slug][0] { _id, title, "slug": slug.current, client, location, description, image, contentImages, products, date }', { slug });
   if (data) {
+    const local = initialCases.find((x: any) => x.id === (data.slug || data._id));
     return {
       id: data.slug || data._id,
       title: data.title,
       client: data.client || '',
       location: data.location || '',
       description: data.description || '',
-      image: mapSanityImage(data.image),
-      contentImages: mapSanityImageArray(data.contentImages),
+      image: mapSanityImage(data.image, local?.image),
+      contentImages: data.contentImages?.length ? mapSanityImageArray(data.contentImages) : local?.contentImages || [],
       products: data.products || [],
       date: data.date,
     };
   }
-  const { initialCases } = require('@/data/siteData');
   return initialCases.find((c: any) => c.id === slug) || null;
 }
 
 export async function getBanners(): Promise<BannerItem[]> {
+  const { initialBanners } = require('@/data/siteData');
   const data = await sanityFetch<any[]>('*[_type == "banner"] | order(order asc) { _id, title, subtitle, image, link, order }');
   if (data && data.length > 0) {
-    return data.map((b: any) => ({
-      id: b._id,
-      title: b.title,
-      subtitle: b.subtitle || '',
-      image: mapSanityImage(b.image),
-      link: b.link || '/products',
-      order: b.order || 0,
-    }));
+    return data.map((b: any) => {
+      const local = initialBanners.find((x: any) => x.order === (b.order || 0));
+      return {
+        id: b._id,
+        title: b.title,
+        subtitle: b.subtitle || '',
+        image: mapSanityImage(b.image, local?.image),
+        link: b.link || '/products',
+        order: b.order || 0,
+      };
+    });
   }
-  const { initialBanners } = require('@/data/siteData');
   return initialBanners as BannerItem[];
 }
 

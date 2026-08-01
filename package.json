@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "migrate": "npx tsx scripts/migrate-to-sanity.ts"
+    "migrate": "npx tsx scripts/migrate-to-sanity.ts",
+    "migrate:images": "npx tsx scripts/migrate-images-to-sanity.ts"
   },
   "dependencies": {
     "@babel/plugin-transform-class-static-block": "^7.29.7",
